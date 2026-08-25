@@ -1,0 +1,38 @@
+{
+  "schema_version": "R6.35-SOURCE-CONTENT-CONTRACT-1.0",
+  "status": "VALIDATED",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "route_id": "M2_D_SHARE_FIRST",
+  "source": {
+    "transcript_relative_path": "artifacts/P2/TRANSCRIPT.json",
+    "transcript_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "timeline_evidence_relative_path": "artifacts/P2/TIMELINE_EVIDENCE.json",
+    "timeline_evidence_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "source_language": "REPLACE_WITH_TRANSCRIPT_LANGUAGE"
+  },
+  "language_decision": {
+    "policy": "KEEP_SOURCE_LANGUAGE",
+    "delivery_language": "REPLACE_WITH_SOURCE_LANGUAGE",
+    "translation_authorization_relative_path": "",
+    "translation_authorization_sha256": ""
+  },
+  "semantic_units": [
+    {
+      "unit_id": "SCU01",
+      "order": 1,
+      "kind": "CLAIM",
+      "canonical_meaning": "REPLACE_WITH_SOURCE_BOUND_MEANING",
+      "required": true,
+      "order_locked": true,
+      "depends_on": [],
+      "source_refs": [
+        {
+          "authority": "TRANSCRIPT",
+          "evidence_id": "ASR001",
+          "evidence_excerpt": "REPLACE_WITH_EXACT_SOURCE_EXCERPT"
+        }
+      ]
+    }
+  ]
+}
+

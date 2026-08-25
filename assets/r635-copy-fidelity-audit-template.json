@@ -1,0 +1,39 @@
+{
+  "schema_version": "R6.35-COPY-FIDELITY-AUDIT-1.0",
+  "status": "PASSED",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "route_id": "M2_D_SHARE_FIRST",
+  "source_content_contract": {
+    "relative_path": "artifacts/P2/SOURCE_CONTENT_CONTRACT.json",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256"
+  },
+  "narration_plan": {
+    "relative_path": "artifacts/P3/NARRATION_PLAN.json",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256"
+  },
+  "delivery_language": "REPLACE_WITH_LOCKED_DELIVERY_LANGUAGE",
+  "unit_mappings": [
+    {
+      "source_unit_id": "SCU01",
+      "utterance_ids": ["U01"],
+      "relation": "PARAPHRASE",
+      "meaning_preserved": true
+    }
+  ],
+  "utterance_claims": [
+    {
+      "utterance_id": "U01",
+      "text": "REPLACE_WITH_EXACT_NARRATION_UTTERANCE",
+      "claim_scope": "SOURCE_PAYLOAD",
+      "source_unit_ids": ["SCU01"],
+      "wrapper_type": "",
+      "non_factual": false
+    }
+  ],
+  "unsupported_claims": [],
+  "omitted_required_unit_ids": [],
+  "causal_order_violations": [],
+  "required_unit_coverage": 1.0,
+  "route_wrapper_ratio": 0.0,
+  "decision": "PASSED"
+}

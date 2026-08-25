@@ -1,0 +1,152 @@
+{
+  "schema_version": "R6.35-JOB-1.0",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "status": "LOCKED",
+  "path_policy": "PROJECT_RELATIVE_ONLY",
+  "project_manifest_path": "R62_PROJECT.json",
+  "route_id": "M2_D_SHARE_FIRST",
+  "execution_profile": "SEMANTIC_SCENE_REMAKE",
+  "objective_profile": "SHARE_FIRST",
+  "source": {
+    "video_path": "inputs/source.mp4",
+    "video_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "audio_path": "",
+    "audio_sha256": "",
+    "cover_path": "",
+    "cover_sha256": "",
+    "duration_s": 0.0,
+    "aspect_ratio": "9:16"
+  },
+  "target": {
+    "duration_s": 0.0,
+    "aspect_ratio": "9:16",
+    "audience": "REPLACE_WITH_AUDIENCE",
+    "audio_variant": "POST_DUB_NARRATION",
+    "timing_authority": "NARRATION_MASTER",
+    "run_purpose": "EXPLORATORY_TEST"
+  },
+  "grid_geometry_contract": {
+    "canvas_aspect_ratio": "9:16",
+    "cell_aspect_ratio": "9:16",
+    "enforcement": "FLEXIBLE_REFERENCE",
+    "prompt_only_control_allowed": true
+  },
+  "imagegen_capability_profile_id": "CODEX_BUILT_IN_IMAGEGEN_PROMPT_ONLY",
+  "style_profile": "DOG_HIGH_SHARE_MONO_COMIC",
+  "creative_profile_binding": {
+    "profile_id": "DOG_HIGH_SHARE_HEAT_V1",
+    "profile_sha256": "REPLACE_WITH_CANONICAL_PROFILE_SHA256",
+    "binding_mode": "FIXED_PROFILE"
+  },
+  "visual_plan_mode": "SCENE_SCOPED_ACTION_GRIDS",
+  "provider_adapter_profile": "GROK_KIE_GRID_FIRST_PLACEHOLDER_SECOND",
+  "provider_intent": {
+    "provider": "KIE.AI",
+    "model_family": "GROK_IMAGINE_VIDEO_1_5",
+    "exact_model_and_endpoint_lock_phase": "P8"
+  },
+  "grid_strategy": {
+    "scope": "ONE_GRID_PER_VIDEO_SEGMENT",
+    "pilot_mode": true,
+    "pilot_grid_order": 1,
+    "pilot_default_layout": "2x2",
+    "adaptive_layout": true,
+    "selection_authority": "NECESSARY_VISUAL_BEATS",
+    "fixed_time_slicing": false,
+    "global_story_grid_provider_input": false,
+    "maximum_unrelated_scenes_per_grid": 0
+  },
+  "visual_anchor_contract": {
+    "required": true,
+    "execution_strategy": "TEST_SEQUENTIAL_ANCHORED",
+    "anchor_origin": "FIRST_PASSED_GRID",
+    "anchor_grid_order": 1,
+    "project_anchor_required_from_grid_order": 2,
+    "previous_segment_end_state_required": true,
+    "unanchored_outputs_may_enter_p7": false,
+    "same_prompt_n_variants_are_distinct_segments": false
+  },
+  "derivation_authority": "APPROVED_SHARE_SCENE_BLUEPRINT",
+  "content_contract": {
+    "topic": "REPLACE_WITH_TOPIC",
+    "blocking_obligations": [
+      "REPLACE_WITH_REQUIRED_MEANING"
+    ],
+    "forbidden_claims": [
+      "REPLACE_WITH_FORBIDDEN_CLAIM"
+    ],
+    "objective_brief": "REPLACE_WITH_SHARE_OR_SAVE_REASON"
+  },
+  "source_content_inheritance": {
+    "schema_version": "R6.35-SOURCE-CONTENT-POLICY-1.0",
+    "source_language_authority": "P2_TRANSCRIPT",
+    "delivery_language_policy": "KEEP_SOURCE_LANGUAGE",
+    "requested_delivery_language": "SOURCE",
+    "audience_may_select_language": false,
+    "semantic_fidelity": "STRICT_SOURCE_MEANING",
+    "required_semantic_unit_coverage": 1.0,
+    "causal_order_policy": "PRESERVE",
+    "unsupported_additions_policy": "BLOCK",
+    "route_wrapper_max_ratio": 0.25
+  },
+  "preservation_contract": {
+    "copy_policy": "APPROVED_REWRITE",
+    "narrative_policy": "APPROVED_SCENE_BLUEPRINT",
+    "action_policy": "APPROVED_LARGE_ACTIONS",
+    "shot_cut_policy": "CREATIVE_SCENE_BOUNDARIES",
+    "camera_space_policy": "CREATIVE_BUT_COHERENT",
+    "timing_policy": "BLUEPRINT_TIMING",
+    "visual_policy": "SELECTED_STYLE_PROFILE",
+    "source_grid_role": "SEMANTIC_EVIDENCE_ONLY"
+  },
+  "permissions": {
+    "keep": [
+      "topic_facts",
+      "blocking_content_obligations"
+    ],
+    "redesign": [
+      "person",
+      "animal",
+      "environment",
+      "visual_style",
+      "scene_execution"
+    ],
+    "forbid": [
+      "unsupported_claims",
+      "unsafe_action"
+    ]
+  },
+  "project_identity": {
+    "person": "同一位年轻男性主人，短黑发，普通白色T恤，深色宽松裤，休闲鞋或拖鞋，干净简洁漫画形象；主人只辅助叙事，不得抢狗狗主体。",
+    "animal": "同一只白色/奶油白小比熊，圆脸，黑豆眼，蓬松毛发，戴蓝色口水兜，耳朵上有小粉色蝴蝶结；狗狗始终是画面第一主体。",
+    "environment": "REPLACE_WITH_ENVIRONMENT_LOCK",
+    "props": [
+      "REPLACE_WITH_PROP_LOCK"
+    ],
+    "accent_colors": [
+      "蓝色口水兜",
+      "粉色蝴蝶结"
+    ]
+  },
+  "visual_state_contract": {
+    "schema_version": "R6.33-VISUAL-STATE-CONTRACT-1.0",
+    "identity_scope": "STABLE_ATTRIBUTES_ONLY",
+    "mutable_state_authority": "P4_STATE_LEDGER",
+    "stable_prop_descriptions": [
+      "REPLACE_WITH_PROP_LOCK"
+    ],
+    "mutable_entity_ids": [],
+    "physical_prop_specs": []
+  },
+  "generation_budget": {
+    "per_grid_baseline_calls": 1,
+    "per_grid_consolidated_corrections": 1,
+    "project_max_grid_baselines": 4,
+    "project_max_grid_corrections": 4,
+    "pilot_gate_after_first_grid": true,
+    "per_cell_calls": 0,
+    "auto_retry": false,
+    "human_approval_before_each_call": true,
+    "one_approval_one_submission": true
+  }
+}

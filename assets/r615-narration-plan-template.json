@@ -1,0 +1,75 @@
+{
+  "schema_version": "R6.15-NARRATION-PLAN-1.0",
+  "status": "LANGUAGE_AWARE_VOICE_ESTIMATE",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "audio_variant": "POST_DUB_NARRATION",
+  "timing_authority": "NARRATION_MASTER",
+  "delivery_language": "REPLACE_WITH_SOURCE_OR_AUTHORIZED_LANGUAGE",
+  "timing_model": {
+    "language_code": "REPLACE_WITH_LANGUAGE_CODE",
+    "unit_mode": "REPLACE_WITH_CJK_CHARACTER_OR_WHITESPACE_WORD",
+    "formula_status": "REPLACE_WITH_PROFILE_FORMULA_STATUS",
+    "final_voice_measurement_required": true
+  },
+  "voice_profile": {
+    "relative_path": "assets/r615-voice-profiles.json",
+    "profile_id": "JIANYING_REAL_PODCAST_FEMALE_1P3",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256"
+  },
+  "voice_lock": {
+    "provider": "JianYing",
+    "voice_id": "真人播客女",
+    "global_speed": 1.3
+  },
+  "full_spoken_copy": "REPLACE_WITH_FULL_COPY",
+  "provider_duration_capability": {
+    "minimum_s": 1,
+    "increment_s": 1,
+    "rounding_policy": "CEIL_CREATIVE_TARGET"
+  },
+  "segments": [
+    {
+      "segment_id": "V01",
+      "segment_order": 1,
+      "spoken_copy": "REPLACE_WITH_COMPLETE_SEGMENT_COPY",
+      "spoken_character_count": 0,
+      "punctuation_run_count": 0,
+      "start_s": 0.0,
+      "end_s": 1.0,
+      "creative_target_duration_s": 1.0,
+      "provider_request_duration_s": 1,
+      "voice_speed": 1.3,
+      "utterances": [
+        {
+          "utterance_id": "U01",
+          "text": "REPLACE_WITH_CLAUSE",
+          "source_unit_ids": ["SCU01"],
+          "claim_scope": "SOURCE_PAYLOAD",
+          "start_s": 0.0,
+          "end_s": 1.0,
+          "visual_obligations": [
+            {
+              "type": "BEHAVIOR",
+              "meaning": "REPLACE_WITH_REQUIRED_MEANING",
+              "visible_evidence": "REPLACE_WITH_FILMABLE_EVIDENCE"
+            }
+          ]
+        }
+      ],
+      "action_nodes": [
+        {
+          "node_id": "N01",
+          "start_s": 0.0,
+          "end_s": 1.0,
+          "action": "REPLACE_WITH_ACTION_PATH",
+          "visible_state_at_end": "REPLACE_WITH_VISIBLE_STATE",
+          "fulfills_obligation_ids": ["U01:1"]
+        }
+      ],
+      "terminal_state": "REPLACE_WITH_COMPLETE_VISIBLE_RESULT"
+    }
+  ],
+  "total_creative_duration_s": 1.0,
+  "total_provider_request_duration_s": 1,
+  "final_audio_reconciliation_required": true
+}

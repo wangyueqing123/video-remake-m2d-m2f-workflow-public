@@ -1,0 +1,13 @@
+{
+  "schema_version": "R6.20-P6-HUMAN-QC-WAIVER-1.0",
+  "project_id": "REPLACE_WITH_PROJECT_ID",
+  "grid_id": "G01",
+  "segment_id": "V01",
+  "rejected_qc_relative_path": "artifacts/P6/G01_P6_QC.json",
+  "rejected_qc_sha256": "REPLACE_WITH_64_HEX_SHA256",
+  "accepted_failure_codes": ["REPLACE_WITH_EXACT_CONTROLLER_QUALIFIED_CODE"],
+  "decision": "ACCEPT_AS_NON_BLOCKING",
+  "scope": "CURRENT_GRID_ONLY",
+  "human_authority_text": "REPLACE_WITH_EXACT_HUMAN_DECISION",
+  "automatic_retry_allowed": false
+}

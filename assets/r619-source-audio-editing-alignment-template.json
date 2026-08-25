@@ -1,0 +1,26 @@
+{
+  "schema_version": "R6.14-EDITING-ALIGNMENT-1.0",
+  "status": "REVIEWED",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "timing_manifest": {
+    "relative_path": "artifacts/P9/SOURCE_AUDIO_TIMING.json",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256"
+  },
+  "timeline_fps": 24.0,
+  "segments": [
+    {
+      "segment_id": "V01",
+      "segment_order": 1,
+      "requested_generation_s": 1,
+      "source_video_duration_s": 1.041667,
+      "edited_video_duration_s": 1.0,
+      "audio_duration_s": 1.0,
+      "source_audio_speed": 1.0,
+      "video_speed": 1.0,
+      "alignment_policy": "VIDEO_FOLLOWS_SOURCE_AUDIO"
+    }
+  ],
+  "total_duration_s": 1.0,
+  "per_segment_voice_speed_changes": false,
+  "decision": "PASSED"
+}

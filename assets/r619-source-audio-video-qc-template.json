@@ -1,0 +1,37 @@
+{
+  "schema_version": "R6.4-P8-VIDEO-OUTPUT-QC-1.0",
+  "status": "REVIEWED",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "segment_id": "V01",
+  "task_id": "REPLACE_WITH_TASK_ID",
+  "generated_output": {
+    "relative_path": "artifacts/P8/V01_GROK_RAW.mp4",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256"
+  },
+  "visual_score_threshold": 80,
+  "visual_score_breakdown": [
+    {"criterion": "IDENTITY_AND_ENVIRONMENT_CONTINUITY", "maximum": 20, "score": 0, "evidence": "REPLACE"},
+    {"criterion": "CORE_ACTION_AND_NARRATIVE_RESULT", "maximum": 25, "score": 0, "evidence": "REPLACE"},
+    {"criterion": "PHYSICAL_TOPOLOGY_AND_SAFETY", "maximum": 20, "score": 0, "evidence": "REPLACE"},
+    {"criterion": "COMPOSITION_STYLE_AND_USABILITY", "maximum": 15, "score": 0, "evidence": "REPLACE"},
+    {"criterion": "REFERENCE_START_AND_SEQUENCE_ADHERENCE", "maximum": 20, "score": 0, "evidence": "REPLACE"}
+  ],
+  "visual_score": 0,
+  "hard_visual_failures": [],
+  "audio_policy": {
+    "pipeline": "SOURCE_AUDIO_REUSE",
+    "excluded_from_visual_score": true,
+    "post_dub_required": false,
+    "generated_audio_action": "MUTE",
+    "protagonist_lip_sync_required": false,
+    "playback_speed": 1.0,
+    "timing_authority": "SOURCE_AUDIO_MASTER",
+    "source_audio": {
+      "relative_path": "inputs/source.mp3",
+      "sha256": "REPLACE_WITH_64_HEX_SHA256"
+    }
+  },
+  "decision": "REJECTED",
+  "automatic_retry_allowed": false,
+  "next_action": "REPLACE_WITH_NEXT_ACTION"
+}

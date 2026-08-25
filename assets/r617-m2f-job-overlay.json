@@ -1,0 +1,57 @@
+{
+  "schema_version": "R6.20-M2F-JOB-OVERLAY-2.0",
+  "apply_to": "assets/r62-job-template.json",
+  "route_id": "M2_F_SOURCE_AUDIO_RESTYLE",
+  "execution_profile": "SOURCE_AUDIO_SCENE_RESTYLE",
+  "objective_profile": "NONE",
+  "derivation_authority": "SOURCE_AUDIO_COPY_PLUS_SOURCE_VIDEO_MACRO_SCENES",
+  "style_profile": "DOG_HIGH_SHARE_MONO_COMIC",
+  "imagegen_capability_profile_id": "CODEX_BUILT_IN_IMAGEGEN_PROMPT_ONLY",
+  "grid_geometry_contract": {
+    "canvas_aspect_ratio": "9:16",
+    "cell_aspect_ratio": "9:16",
+    "enforcement": "FLEXIBLE_REFERENCE",
+    "prompt_only_control_allowed": true
+  },
+  "creative_profile_binding": {
+    "profile_id": "DOG_SOURCE_AUDIO_RESTYLE_V1",
+    "profile_sha256": "REPLACE_WITH_CANONICAL_PROFILE_SHA256",
+    "binding_mode": "FIXED_PROFILE"
+  },
+  "source": {
+    "audio_path": "inputs/source.mp3",
+    "audio_sha256": "REPLACE_WITH_64_HEX_SHA256"
+  },
+  "target": {
+    "audio_variant": "SOURCE_AUDIO_REUSE",
+    "timing_authority": "SOURCE_AUDIO_MASTER"
+  },
+  "source_audio_copy_contract": {
+    "audio_relative_path": "inputs/source.mp3",
+    "audio_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "copy_relative_path": "inputs/source-copy.txt",
+    "copy_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "copy_policy": "VERBATIM_NO_REWRITE",
+    "audio_usage": "FULL_TRACK_UNCHANGED",
+    "playback_speed": 1.0,
+    "source_video_semantic_authority": "MACRO_SCENE_ACTION_CAUSAL_ONLY",
+    "source_video_pixel_authority": "NONE",
+    "source_video_camera_cut_authority": "NONE",
+    "source_video_keyframes_as_generation_input": false
+  },
+  "preservation_contract": {
+    "copy_policy": "EXACT_SOURCE_COPY",
+    "narrative_policy": "EXACT_SOURCE_ORDER",
+    "action_policy": "SOURCE_VIDEO_MACRO_ACTIONS_ALIGNED_TO_COPY",
+    "shot_cut_policy": "NEW_RESTYLED_SHOTS",
+    "camera_space_policy": "NEW_RESTYLED_CAMERA_SPACE",
+    "timing_policy": "EXACT_SOURCE_AUDIO_TIMECODES",
+    "visual_policy": "FULL_RESTYLE_FROM_SOURCE_SCENE_SEMANTICS",
+    "source_grid_role": "SEMANTIC_ACTION_EVIDENCE_ONLY"
+  },
+  "project_identity_source": "assets/creative-profile-registry.json#profiles/DOG_SOURCE_AUDIO_RESTYLE_V1/fixed_project_identity",
+  "project_defined_identity_fields": [
+    "environment",
+    "props"
+  ]
+}

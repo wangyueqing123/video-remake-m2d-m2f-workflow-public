@@ -1,0 +1,37 @@
+{
+  "schema_version": "M2D-M2F-DISTRIBUTION-1.0",
+  "release_id": "R6.41.2-DF1-PUBLIC",
+  "upstream_release": "R6.41",
+  "upstream_repository_patch": "R6.41.2",
+  "upstream_commit": "9ac1d03423f997b8dce43d9987feec6c99bae2e0",
+  "visibility": "PUBLIC_REPOSITORY",
+  "supported_routes": [
+    "M2_D_SHARE_FIRST",
+    "M2_F_SOURCE_AUDIO_RESTYLE"
+  ],
+  "unsupported_routes_must_block": true,
+  "style_policy": {
+    "independent_axis": true,
+    "default": "DOG_HIGH_SHARE_MONO_COMIC",
+    "allowed": [
+      "DOG_HIGH_SHARE_MONO_COMIC",
+      "DOG_STYLE_C_GHIBLI_PET_NARRATIVE",
+      "DOG_STYLE_D_INDOOR_CARE_KEYFRAME",
+      "DOG_STYLE_E_REACTION_RESONANCE",
+      "CUSTOM_NAMED_STYLE"
+    ],
+    "selection_phase": "P1",
+    "style_change_invalidates": ["P3", "P4", "P5", "P6", "P7", "P8", "P9"]
+  },
+  "imagegen_policy": {
+    "builtin_profile": "CODEX_BUILT_IN_IMAGEGEN_PROMPT_ONLY",
+    "geometry": "FLEXIBLE_REFERENCE",
+    "whole_grid_only": true,
+    "automatic_retry": false
+  },
+  "release_gate": {
+    "segment_visual_floor": 80,
+    "final_master_aggregate_threshold": 85,
+    "hard_failures_allowed": 0
+  }
+}

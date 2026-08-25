@@ -1,0 +1,29 @@
+{
+  "schema_version": "R6.2-CALL-SEAL-1.0",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "phase": "P6",
+  "package_sha256": "REPLACE_WITH_64_HEX_SHA256",
+  "job_sha256": "REPLACE_WITH_64_HEX_SHA256",
+  "timeline_evidence_fingerprint": "REPLACE_WITH_64_HEX_CANONICAL_FINGERPRINT",
+  "timeline_evidence_file_sha256": "REPLACE_WITH_64_HEX_SHA256",
+  "scene_plan_sha256": "REPLACE_WITH_64_HEX_SHA256",
+  "prompt_sha256": "REPLACE_WITH_64_HEX_SHA256",
+  "style_registry_sha256": "REPLACE_WITH_64_HEX_SHA256",
+  "reference_roles": [
+    {
+      "path": "REPLACE_WITH_REFERENCE_PATH",
+      "sha256": "REPLACE_WITH_64_HEX_SHA256",
+      "role": "IDENTITY_STYLE_REFERENCE",
+      "structural_authority": false
+    }
+  ],
+  "grid_id": "G01",
+  "segment_id": "V01",
+  "resource_id": "G01",
+  "call_kind": "GRID_BASELINE",
+  "call_ordinal": 1,
+  "auto_retry": false,
+  "human_approval_required": true,
+  "one_approval_one_submission": true,
+  "status": "WAIT_REVIEW"
+}

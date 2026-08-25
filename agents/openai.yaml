@@ -1,0 +1,7 @@
+interface:
+  display_name: "M2-D / M2-F 视频生产"
+  short_description: "转发旁白二创与原声换画面双模式生产工作流"
+  default_prompt: "Use $video-remake-m2d-m2f to run a sealed M2-D or M2-F video production project."
+policy:
+  allow_implicit_invocation: true
+

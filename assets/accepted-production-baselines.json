@@ -1,0 +1,87 @@
+{
+  "schema_version": "R6.30-ACCEPTED-PRODUCTION-BASELINES-1.0",
+  "status": "FROZEN",
+  "authority": "PROJECT_ARTIFACTS_AND_HASHES_NOT_CHAT_MEMORY",
+  "shared_contract": {
+    "source_content_default_language_policy": "KEEP_SOURCE_LANGUAGE",
+    "source_content_required_unit_coverage": 1.0,
+    "source_content_unsupported_additions": "BLOCK",
+    "scene_unit": "ONE_COMPLETE_MACRO_ACTION_SCENE",
+    "grid_scope": "ONE_GRID_PER_VIDEO_SEGMENT",
+    "grid_layout": "MINIMUM_SUFFICIENT_LAYOUT_STARTING_AT_2X2",
+    "grid_generation": "ONE_WHOLE_GRID_PER_CALL",
+    "first_grid_reference_policy": "PROMPT_ONLY",
+    "later_grid_reference_policy": "PROJECT_VISUAL_ANCHOR_PLUS_PREVIOUS_END_STATE",
+    "video_input_order": [
+      "SEGMENT_ACTION_GRID",
+      "DETERMINISTIC_START_CELL"
+    ],
+    "human_approval_before_external_call": true,
+    "one_approval_one_submission": true,
+    "automatic_retry": false,
+    "segment_visual_floor": 80,
+    "final_aggregate_floor": 85,
+    "direct_jianying_draft_is_primary": true,
+    "computer_use_is_preview_export_or_documented_fallback_only": true
+  },
+  "baselines": [
+    {
+      "baseline_id": "M2_D_SHARE_FIRST_PRODUCTION_V1",
+      "route_id": "M2_D_SHARE_FIRST",
+      "objective": "SHARE_FIRST",
+      "copy_policy": "REWRITE_FOR_SHARE_WITH_APPROVED_MEANING",
+      "visual_derivation": "APPROVED_COPY_PLUS_COMPLETE_MACRO_SCENES",
+      "source_video_pixels_as_generation_input": false,
+      "audio_variant": "POST_DUB_NARRATION",
+      "timing_authority": "NARRATION_MASTER",
+      "voice_profile_id": "JIANYING_REAL_PODCAST_FEMALE_1P3",
+      "voice_speed": 1.3,
+      "generated_video_audio": "MUTE",
+      "video_alignment": "VIDEO_FOLLOWS_FINAL_MEASURED_NARRATION",
+      "caption_authority": "FINAL_MEASURED_NARRATION_ASR_PLUS_APPROVED_COPY",
+      "certification": {
+        "scope": "VISUAL_TIMING_AND_DRAFT_ASSEMBLY_ONLY",
+        "copy_fidelity_certified": false,
+        "project_id": "m2d-share-first-r616-full-test-20260815-01",
+        "p8_aggregate_visual_score": 90.25,
+        "captioned_draft_score": 96,
+        "direct_draft_content_sha256": "bfa48ceceebfc7c2b5f8af603401b8c2de2e6e035573b9330cb93c5f99679311"
+      }
+    },
+    {
+      "baseline_id": "M2_F_SOURCE_AUDIO_SCENE_RESTYLE_V2",
+      "route_id": "M2_F_SOURCE_AUDIO_RESTYLE",
+      "objective": "SOURCE_COPY_AND_AUDIO_PRESERVATION_WITH_SEMANTIC_VISUAL_RESTYLE",
+      "copy_policy": "VERBATIM_NO_REWRITE",
+      "visual_derivation": "SOURCE_AUDIO_COPY_PLUS_SOURCE_VIDEO_MACRO_SCENES",
+      "source_video_pixels_as_generation_input": false,
+      "audio_variant": "SOURCE_AUDIO_REUSE",
+      "timing_authority": "SOURCE_AUDIO_MASTER",
+      "source_audio_speed": 1.0,
+      "generated_video_audio": "MUTE",
+      "video_alignment": "VIDEO_FOLLOWS_SOURCE_AUDIO",
+      "caption_authority": "LOCKED_SOURCE_COPY_ALIGNED_TO_SOURCE_AUDIO_ASR_WORDS",
+      "certification": {
+        "project_id": "TIKTOK_EN_FAST_EATING_M2F_R623_20260818_002",
+        "segment_scores": [87, 84],
+        "aggregate_visual_score": 85.5,
+        "draft_duration_s": 14.885,
+        "caption_count": 11,
+        "p9_build_receipt_sha256": "1c14507078e74635b0e3772a5f8b2f5be2e921b3c653ea3ddd2445ea068e24ca",
+        "draft_qc_sha256": "e0121f570eb1a5e1910973f3a879b82c3d413910742554ae188bd20a23f53f45",
+        "direct_draft_content_sha256": "08a8106456a328489cb3a64ca51fa700305458fddbbe2f1a016acda57785373a"
+      }
+    }
+  ],
+  "new_mode_test_contract": {
+    "derive_from_exactly_one_baseline": true,
+    "declare_changed_fields_before_p2": true,
+    "new_project_revision_required": true,
+    "reuse_old_p3_to_p9_artifacts": false,
+    "timing_authority_must_be_single": true,
+    "visual_authority_must_be_single": true,
+    "fresh_p6_and_p8_external_calls_require_new_seals": true,
+    "diagnose_system_before_retry": true,
+    "model_deviation_within_score_policy_does_not_rewrite_workflow": true
+  }
+}

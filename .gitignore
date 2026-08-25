@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+accounts.local.json
+config/accounts.local.json
+__pycache__/
+*.pyc
+.pytest_cache/
+projects/
+outputs/
+tmp/
+

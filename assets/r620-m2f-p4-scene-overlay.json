@@ -1,0 +1,28 @@
+{
+  "schema_version": "R6.20-M2F-P4-SCENE-OVERLAY-1.0",
+  "apply_to": "assets/r62-scene-plan-template.json",
+  "route_id": "M2_F_SOURCE_AUDIO_RESTYLE",
+  "source_video_sha256": "REPLACE_WITH_P1_SOURCE_VIDEO_SHA256",
+  "source_audio_sha256": "REPLACE_WITH_P1_SOURCE_AUDIO_SHA256",
+  "timing_authority": "SOURCE_AUDIO_MASTER",
+  "timeline_sampling_policy": "SOURCE_AUDIO_PLUS_SOURCE_MACRO_SCENES",
+  "scene_overlay": {
+    "authority": "SOURCE_AUDIO_SCENE_SEMANTIC_BLUEPRINT",
+    "source_scene_ids": ["MS01"],
+    "source_evidence_intervals": [[0.0, 0.0]],
+    "source_copy_spans": [{"segment_id": "V01", "copy_char_start": 0, "copy_char_end": 0}],
+    "inherited_action_contracts": [{
+      "action_subject": "REPLACE_WITH_P2_SUBJECT",
+      "action_object": "REPLACE_WITH_P2_OBJECT",
+      "action_path": "REPLACE_WITH_P2_ACTION_PATH",
+      "causal_order": "REPLACE_WITH_P2_CAUSAL_ORDER",
+      "visible_result": "REPLACE_WITH_P2_VISIBLE_RESULT",
+      "forbidden_substitutions": ["REPLACE_WITH_P2_FORBIDDEN_SUBSTITUTION"]
+    }]
+  },
+  "video_segment_overlay": {
+    "source_audio_segment_id": "V01",
+    "source_audio_duration_s": 0.0,
+    "source_scene_ids": ["MS01"]
+  }
+}

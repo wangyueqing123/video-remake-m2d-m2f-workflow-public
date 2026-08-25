@@ -1,0 +1,97 @@
+{
+  "schema_version": "R6.31-CREATIVE-PROFILE-REGISTRY-1.0",
+  "distribution_scope": [
+    "M2_D_SHARE_FIRST",
+    "M2_F_SOURCE_AUDIO_RESTYLE"
+  ],
+  "profiles": {
+    "DOG_HIGH_SHARE_HEAT_V1": {
+      "origin": {
+        "kind": "USER_SUPPLIED_SKILL",
+        "name": "DOG_HIGH_SHARE_HEAT_STORYBOARD_ACTION_SKILL_V1.0_FULL"
+      },
+      "allowed_route_ids": ["M2_D_SHARE_FIRST"],
+      "required_style_profile": null,
+      "default_style_profile": "DOG_HIGH_SHARE_MONO_COMIC",
+      "allowed_style_profiles": [
+        "DOG_HIGH_SHARE_MONO_COMIC",
+        "DOG_STYLE_C_GHIBLI_PET_NARRATIVE",
+        "DOG_STYLE_D_INDOOR_CARE_KEYFRAME",
+        "DOG_STYLE_E_REACTION_RESONANCE",
+        "CUSTOM_NAMED_STYLE"
+      ],
+      "visual_production_core": {
+        "core_id": "DOG_DF_VISUAL_CORE_V3",
+        "relative_path": "assets/shared-visual-production-core.json",
+        "sha256": "d7efda58054b780a69ef0bf8ec784d4ff988378e4eb99eb56389085b3ea4e032"
+      },
+      "identity_policy": "FIXED_REFERENCE_IDENTITY",
+      "fixed_project_identity": {
+        "person": "同一位年轻男性主人，短黑发，普通白色T恤，深色宽松裤，休闲鞋或拖鞋，干净简洁漫画形象；主人只辅助叙事，不得抢狗狗主体。",
+        "animal": "同一只白色/奶油白小比熊，圆脸，黑豆眼，蓬松毛发，戴蓝色口水兜，耳朵上有小粉色蝴蝶结；狗狗始终是画面第一主体。",
+        "accent_colors": ["蓝色口水兜", "粉色蝴蝶结"]
+      },
+      "project_defined_identity_fields": ["environment", "props"],
+      "visual_hierarchy": {"primary_subject": "DOG", "supporting_subject": "OWNER", "owner_may_dominate_frame": false}
+    },
+    "DOG_SOURCE_AUDIO_RESTYLE_V1": {
+      "origin": {
+        "kind": "R6.17_DERIVED_FIXED_PROFILE",
+        "name": "Source-audio restyle using the approved dog identity"
+      },
+      "allowed_route_ids": ["M2_F_SOURCE_AUDIO_RESTYLE"],
+      "required_style_profile": null,
+      "default_style_profile": "DOG_HIGH_SHARE_MONO_COMIC",
+      "allowed_style_profiles": [
+        "DOG_HIGH_SHARE_MONO_COMIC",
+        "DOG_STYLE_C_GHIBLI_PET_NARRATIVE",
+        "DOG_STYLE_D_INDOOR_CARE_KEYFRAME",
+        "DOG_STYLE_E_REACTION_RESONANCE",
+        "CUSTOM_NAMED_STYLE"
+      ],
+      "visual_production_core": {
+        "core_id": "DOG_DF_VISUAL_CORE_V3",
+        "relative_path": "assets/shared-visual-production-core.json",
+        "sha256": "d7efda58054b780a69ef0bf8ec784d4ff988378e4eb99eb56389085b3ea4e032"
+      },
+      "identity_policy": "FIXED_REFERENCE_IDENTITY",
+      "fixed_project_identity": {
+        "person": "同一位年轻男性主人，短黑发，普通白色T恤，深色宽松裤，休闲鞋或拖鞋，干净简洁漫画形象；主人只辅助叙事，不得抢狗狗主体。",
+        "animal": "同一只白色/奶油白小比熊，圆脸，黑豆眼，蓬松毛发，戴蓝色口水兜，耳朵上有小粉色蝴蝶结；狗狗始终是画面第一主体。",
+        "accent_colors": ["蓝色口水兜", "粉色蝴蝶结"]
+      },
+      "project_defined_identity_fields": ["environment", "props"],
+      "visual_hierarchy": {"primary_subject": "DOG", "supporting_subject": "OWNER", "owner_may_dominate_frame": false}
+    },
+    "PROJECT_DEFINED_DF_V1": {
+      "origin": {"kind": "DISTRIBUTION_PROFILE", "name": "Explicit project-defined D/F identity"},
+      "allowed_route_ids": ["M2_D_SHARE_FIRST", "M2_F_SOURCE_AUDIO_RESTYLE"],
+      "required_style_profile": null,
+      "default_style_profile": "DOG_HIGH_SHARE_MONO_COMIC",
+      "allowed_style_profiles": [
+        "DOG_HIGH_SHARE_MONO_COMIC",
+        "DOG_STYLE_C_GHIBLI_PET_NARRATIVE",
+        "DOG_STYLE_D_INDOOR_CARE_KEYFRAME",
+        "DOG_STYLE_E_REACTION_RESONANCE",
+        "CUSTOM_NAMED_STYLE"
+      ],
+      "visual_production_core": {
+        "core_id": "DOG_DF_VISUAL_CORE_V3",
+        "relative_path": "assets/shared-visual-production-core.json",
+        "sha256": "d7efda58054b780a69ef0bf8ec784d4ff988378e4eb99eb56389085b3ea4e032"
+      },
+      "identity_policy": "PROJECT_DEFINED",
+      "fixed_project_identity": {},
+      "project_defined_identity_fields": ["person", "animal", "environment", "props", "accent_colors"],
+      "visual_hierarchy": {}
+    }
+  },
+  "mandatory_route_style_bindings": [],
+  "style_selection_contract": {
+    "default": "DOG_HIGH_SHARE_MONO_COMIC",
+    "locked_at_p1": true,
+    "style_change_is_not_route_change": true,
+    "style_change_may_not_change_copy_audio_or_timing": true
+  }
+}
+

@@ -1,0 +1,109 @@
+{
+  "schema_version": "R6.35-M2D-PRODUCTION-PROFILE-2.0",
+  "profile_id": "M2_D_SHARE_FIRST_PRODUCTION_V1",
+  "status": "FROZEN_EXECUTION_CORE_WITH_R635_CONTENT_GATE",
+  "route_id": "M2_D_SHARE_FIRST",
+  "objective": "SHARE_FIRST",
+  "default_style_profile": "DOG_HIGH_SHARE_MONO_COMIC",
+  "allowed_style_profiles": [
+    "DOG_HIGH_SHARE_MONO_COMIC",
+    "DOG_STYLE_C_GHIBLI_PET_NARRATIVE",
+    "DOG_STYLE_D_INDOOR_CARE_KEYFRAME",
+    "DOG_STYLE_E_REACTION_RESONANCE",
+    "CUSTOM_NAMED_STYLE"
+  ],
+  "creative_profile_id": "DOG_HIGH_SHARE_HEAT_V1",
+  "visual_production_core_id": "DOG_DF_VISUAL_CORE_V3",
+  "aspect_ratio": "9:16",
+  "imagegen_capability_contract": {
+    "tool": "BUILT_IN_IMAGEGEN",
+    "profile_id": "CODEX_BUILT_IN_IMAGEGEN_PROMPT_ONLY",
+    "geometry_enforcement": "FLEXIBLE_REFERENCE",
+    "prompt_only_control_allowed": true,
+    "exact_pixels_claimed": false,
+    "canvas_and_cell_aspect_are_composition_guidance": true,
+    "downstream_start_cell_crop_is_deterministic": true,
+    "post_generation_geometry_verification_required": true
+  },
+  "audio": {
+    "variant": "POST_DUB_NARRATION",
+    "timing_authority": "NARRATION_MASTER",
+    "voice_profile_id": "JIANYING_REAL_PODCAST_FEMALE_1P3",
+    "provider": "JianYing",
+    "voice_id": "真人播客女",
+    "global_speed": 1.3,
+    "native_video_audio": "MUTED",
+    "video_alignment": "VIDEO_TO_FINAL_NARRATION"
+  },
+  "source_content": {
+    "default_delivery_language_policy": "KEEP_SOURCE_LANGUAGE",
+    "audience_may_select_language": false,
+    "semantic_fidelity": "STRICT_SOURCE_MEANING",
+    "required_semantic_unit_coverage": 1.0,
+    "causal_order_policy": "PRESERVE",
+    "unsupported_additions_policy": "BLOCK",
+    "route_wrapper_max_ratio": 0.25
+  },
+  "draft_assembly": {
+    "primary_method": "DIRECT_PYJIANYING_EDIT_PLAN",
+    "foundation_role": "READ_ONLY_DEPENDENCY",
+    "computer_use_required_for_assembly": false,
+    "computer_use_allowed_for": [
+      "JY_NATIVE_TTS_ACQUISITION",
+      "FIRST_VERSION_COMPATIBILITY_QC",
+      "PREVIEW_AND_EXPORT",
+      "DIRECT_DRAFT_FAILURE_FALLBACK"
+    ],
+    "direct_text_capabilities": [
+      "FONT_SIZE",
+      "FILL_COLOR",
+      "OUTLINE",
+      "ALIGNMENT",
+      "AUTO_WRAP",
+      "POSITION"
+    ]
+  },
+  "captions": {
+    "authority": "FINAL_MEASURED_NARRATION",
+    "editor": "JianYingPro",
+    "method": "DIRECT_TEXT_TRACK_FROM_FINAL_NARRATION_TIMING",
+    "timing_aligner": "LOCAL_FASTER_WHISPER_WITH_APPROVED_SCRIPT_CORRECTION",
+    "fallback_method": "NATIVE_SPEECH_RECOGNITION",
+    "language_authority": "P1_SOURCE_CONTENT_INHERITANCE",
+    "font": "系统",
+    "font_size": 12,
+    "fill": "#FFFFFF",
+    "outline": "black",
+    "horizontal_alignment": "center",
+    "x": 0,
+    "y": -300,
+    "maximum_lines": 2,
+    "display_punctuation": "OPTIONAL",
+    "full_spoken_copy_coverage": true,
+    "semantic_word_errors_allowed": 0,
+    "temporary_tts_source_text_visible": false,
+    "apply_style_to_all_captions": true
+  },
+  "release_gate": {
+    "segment_visual_floor": 80,
+    "final_master_aggregate_threshold": 85,
+    "captioned_draft_threshold": 85,
+    "hard_failures_allowed": 0,
+    "automatic_retry_allowed": false,
+    "caption_overflow_allowed": false
+  },
+  "certification_evidence": {
+    "certification_scope": "VISUAL_TIMING_DRAFT_ASSEMBLY_ONLY",
+    "legacy_copy_fidelity_certified": false,
+    "project_id": "m2d-share-first-r616-full-test-20260815-01",
+    "caption_track_sha256": "081dfe25a606cb8f1f20367c2c8681e8afc38e4b66cb4f0f45cea4c10bb4fb48",
+    "captioned_draft_qc_sha256": "f9f6f5b853314f7bc1093f618959ea5b8a8e85f7d2f8c9d4ae0c7d366a8445bb",
+    "captioned_completion_receipt_sha256": "25d07fd50d79935c6a1893674060c41c7448c89f89d5d5ca2446a394a11e5e8a",
+    "portable_bundle_sha256": "39d9ff3534c723f35ed4e54f424f975d0706c2ecd1e21a0c1bf5ff5bfcf30be3",
+    "direct_edit_plan_sha256": "0a6f365fe693487fe5580bc33d83b9d0a00ee14795df24753727b3f4db3e5be9",
+    "direct_draft_receipt_sha256": "e5bbe520740629b8a63f9c05be0d1258e42dce0c980cb5d58f3ef64f72808eaa",
+    "direct_draft_content_sha256": "bfa48ceceebfc7c2b5f8af603401b8c2de2e6e035573b9330cb93c5f99679311",
+    "captioned_draft_score": 96,
+    "p8_aggregate_visual_score": 90.25
+  }
+}

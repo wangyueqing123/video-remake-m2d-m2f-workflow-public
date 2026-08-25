@@ -1,0 +1,812 @@
+{
+  "schema_version": "M2D-M2F-MANIFEST-1.0",
+  "release_id": "R6.41.2-DF1-PUBLIC",
+  "file_count": 161,
+  "files": [
+    {
+      "path": ".gitignore",
+      "size": 132,
+      "sha256": "154d36c29baf12beeb7bdc5d427e479f5578e9aa4c486b1b83b60c9edc215d41"
+    },
+    {
+      "path": "README.md",
+      "size": 5229,
+      "sha256": "6075f97cc15d990e304b2c1c8cc928b55c4bb3dbb655c648543cf87a2ae4b358"
+    },
+    {
+      "path": "RELEASE.json",
+      "size": 1121,
+      "sha256": "3decdbe67f1ed7c043d744be0e4e559687abe5e2fbd1664075b61208540ae14a"
+    },
+    {
+      "path": "SKILL.md",
+      "size": 5346,
+      "sha256": "f47cf2b2a6ad325b337dd81fbdf255f29a378947b627a8ce17d955c7aaaaee2a"
+    },
+    {
+      "path": "VERSION",
+      "size": 19,
+      "sha256": "a5f980056dd88b51dd8eb5c44f1acde47c8987193e3962233abb1d4a97a35c83"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "size": 282,
+      "sha256": "6412d904d86b87c918f2804c572f0a03260e0143cf75175e1f9ca6cd124a0438"
+    },
+    {
+      "path": "assets/accepted-production-baselines.json",
+      "size": 3918,
+      "sha256": "21cc8701eeace933e5cffd93af3df4c24986cd0dd9d9864453dd3b0618a69ecb"
+    },
+    {
+      "path": "assets/creative-profile-registry.json",
+      "size": 4518,
+      "sha256": "5984755233d56a297fe3a625d900da26c8d31c67255c321aa39cf4380413223b"
+    },
+    {
+      "path": "assets/imagegen-capability-registry.json",
+      "size": 1141,
+      "sha256": "9f44a12602313c0b7b8b3377a7857a00a1d850aef7b6c79e0dad2b93253aa8fa"
+    },
+    {
+      "path": "assets/m2-d-share-first-production-profile.json",
+      "size": 4224,
+      "sha256": "8ff511f501f18ac0e08134b9c582fcf2a47a47d1fb8d76862a40a3edf1a2d0a7"
+    },
+    {
+      "path": "assets/m2-f-source-audio-restyle-profile.json",
+      "size": 2374,
+      "sha256": "f63aed54204a5fbeb3710cf899a6ab8b952527cbe2a23d7e462239d3cd5d4fee"
+    },
+    {
+      "path": "assets/r613-final-master-qc-template.json",
+      "size": 1185,
+      "sha256": "c5d340b6e2baa62a488a6b77136c41ba250ab68b96b198e2a4d8fbe0d2fa01c2"
+    },
+    {
+      "path": "assets/r614-editing-alignment-template.json",
+      "size": 703,
+      "sha256": "917c07eb444ea6800376799fb31417f8c70c693a62c87253abb7ce9b47c73f35"
+    },
+    {
+      "path": "assets/r614-final-master-qc-template.json",
+      "size": 1535,
+      "sha256": "8317320f9016b741ebe3eae0fe66c8d06a076edff2fd6f2402f0fede125f686f"
+    },
+    {
+      "path": "assets/r614-narration-timing-template.json",
+      "size": 789,
+      "sha256": "083d8a5cdb9e60f3b7fa04a312457df453fb4bf0ee5f7c0f5265ecc9608994e6"
+    },
+    {
+      "path": "assets/r615-narration-plan-template.json",
+      "size": 2329,
+      "sha256": "212c322866bbcfcf806862cc2643c517bd6bedade5e53cd4fd7a8988e8ff04a7"
+    },
+    {
+      "path": "assets/r615-voice-profiles.json",
+      "size": 1310,
+      "sha256": "d7e6d528800dadbb005837543d5f5b167bb1c68d008764e354b6793a58d3807f"
+    },
+    {
+      "path": "assets/r617-m2f-job-overlay.json",
+      "size": 2249,
+      "sha256": "972318722156e06c36b1c0acffe9b370187b340bffbaf29c43b2955dc36c27a2"
+    },
+    {
+      "path": "assets/r617-source-audio-plan-template.json",
+      "size": 2066,
+      "sha256": "e676e32e91b500870da94b4f517f086de6440ec91f295dfd57b4374012d6ac3e"
+    },
+    {
+      "path": "assets/r619-source-audio-editing-alignment-template.json",
+      "size": 712,
+      "sha256": "de827429e1239ae29385428b31d4ef4cadc5a462afe01a7b47aeaca0dafd4a33"
+    },
+    {
+      "path": "assets/r619-source-audio-timing-template.json",
+      "size": 935,
+      "sha256": "3c157b220c776d510e523069ffea2719817f714a10fc9c63f29dfd73ee36889d"
+    },
+    {
+      "path": "assets/r619-source-audio-video-qc-template.json",
+      "size": 1460,
+      "sha256": "0aa4b8c0c3b5dca6542b31183838b1e29560f18c75aa2fc82f7154708ab22cd4"
+    },
+    {
+      "path": "assets/r62-asset-upload-package-template.json",
+      "size": 1451,
+      "sha256": "80c573c2f97b66807f00e92b5e58382e59542645b5b22fe2038073e0abb76efb"
+    },
+    {
+      "path": "assets/r62-call-seal-template.json",
+      "size": 950,
+      "sha256": "d4e08ac1924ed9f7896f5d9b0ee61b44a2df42e9bdce83af380c975c162ba2df"
+    },
+    {
+      "path": "assets/r62-environment.json",
+      "size": 1804,
+      "sha256": "27b284fa99d2d0cb6305707518bc22c417bb11be1a59300f90a98d9ef96eafc0"
+    },
+    {
+      "path": "assets/r62-imagegen-capability-template.json",
+      "size": 645,
+      "sha256": "f8f7e93667265cdcc5d02a2d7eede73749ff9ea8e4c7c2e9a914638f908efe99"
+    },
+    {
+      "path": "assets/r62-job-template.json",
+      "size": 5105,
+      "sha256": "8523b503b461921780a1420b2024a5c51ec8e8e7da24f811fe1fbdcd226b812a"
+    },
+    {
+      "path": "assets/r62-p6-call-package-template.json",
+      "size": 3954,
+      "sha256": "17d684e82f3efc100e37bbb2f825e1947e750c54e0425b6160f26652b815eb9a"
+    },
+    {
+      "path": "assets/r62-p6-qc-template.json",
+      "size": 1971,
+      "sha256": "149898be1563810349326679808970bb8ebed955f6ad3fc10d5f9eefdd7bd230"
+    },
+    {
+      "path": "assets/r62-project-manifest-template.json",
+      "size": 1701,
+      "sha256": "21c63da9694a1317a7c3b06343297e51e8940625399683eeec0221e745251fcb"
+    },
+    {
+      "path": "assets/r62-scene-plan-template.json",
+      "size": 11452,
+      "sha256": "47486c750cc0c97b57fbccd5f8c617708a55bf5a7d3d1e9c7d72bdca91d51fab"
+    },
+    {
+      "path": "assets/r62-segment-package-template.json",
+      "size": 2930,
+      "sha256": "6c2cb968b574b4cda1d423ab0b51c640ef3b5c7997174bcc6505f3652452a2a1"
+    },
+    {
+      "path": "assets/r62-timeline-evidence-template.json",
+      "size": 2739,
+      "sha256": "a8b4bd6096076eee83f3d03d392fdb08df22ed9a9c2ae80a0dc22ba51d81acd7"
+    },
+    {
+      "path": "assets/r62-video-request-template.json",
+      "size": 1922,
+      "sha256": "6b089989b5c9d242db45206a0990dbe40bc41b0dce15461ff6c8551b42a6bbe5"
+    },
+    {
+      "path": "assets/r620-m2f-p4-scene-overlay.json",
+      "size": 1179,
+      "sha256": "04d16c2c343c21ce30eb96ae6b39c575a8184975b912590df5d68e481daf15ba"
+    },
+    {
+      "path": "assets/r620-p6-human-qc-waiver-template.json",
+      "size": 506,
+      "sha256": "e6caf75bf7ed2feb046ae0c418ac08ffe37184fdbb689eeb7bdc4bc8b68e40c5"
+    },
+    {
+      "path": "assets/r620-source-macro-scene-evidence-template.json",
+      "size": 1513,
+      "sha256": "2673278e93ae6c450fae28f59a4d279755c5ad4eae2569596cb00eeac93d9e8d"
+    },
+    {
+      "path": "assets/r623-flow-invariants.json",
+      "size": 1525,
+      "sha256": "2e51545fa8372d6efe12c572e1c1b78b5c305ef34653814cd9d049d0569f9176"
+    },
+    {
+      "path": "assets/r623-video-layout-receipt-template.json",
+      "size": 409,
+      "sha256": "9fc812ebafdaaeab4a78f1c454a263c662a388c6acbf076d84267d8910bec490"
+    },
+    {
+      "path": "assets/r623-video-prompt-audit-template.json",
+      "size": 498,
+      "sha256": "5ade06c232f6b42ed1eba660b6b2c52e6dee147ed0c6d5fb149498b843af0aa5"
+    },
+    {
+      "path": "assets/r623-video-qc-gate-template.json",
+      "size": 997,
+      "sha256": "b7c2dfc995a87718a263fdb451966bb8d7af286f557056b691f739db45357f34"
+    },
+    {
+      "path": "assets/r624-source-event-evidence-template.json",
+      "size": 1224,
+      "sha256": "f3858656d80ae793f01702f05950fd5d4a4382065996a01f70cb853726fb931b"
+    },
+    {
+      "path": "assets/r634-p6-fact-bearing-waiver-template.json",
+      "size": 882,
+      "sha256": "56054100748009629819b2982b043d761de5f9635a4e82e2fc602b1967796498"
+    },
+    {
+      "path": "assets/r634-p6-microstate-compression-waiver-template.json",
+      "size": 993,
+      "sha256": "6085ffa8d800d7f1f9c80d1e3636963b34ad958bef8c4ff39af448838020c004"
+    },
+    {
+      "path": "assets/r635-copy-fidelity-audit-template.json",
+      "size": 1087,
+      "sha256": "6bb050347a09c50e57d23310d30bac6369d95076e3af197cd2e2826ae8f5f048"
+    },
+    {
+      "path": "assets/r635-source-content-contract-template.json",
+      "size": 1145,
+      "sha256": "fa9d76c046eb42e8bdd78fe0b45a3c4add21e53f74d104bd3728dc5c15c40e94"
+    },
+    {
+      "path": "assets/r637-content-p6-call-package-template.json",
+      "size": 3616,
+      "sha256": "298318eb58468d3c3bad74702e67ef39249860e080529340ec2b2e245574f73a"
+    },
+    {
+      "path": "assets/r64-video-output-qc-template.json",
+      "size": 1521,
+      "sha256": "c63a803c5f207e85ad45e93032c3a5c66ab28d131bd612b4a7053ab3e88d46c4"
+    },
+    {
+      "path": "assets/r66-end-state-crop-receipt-template.json",
+      "size": 653,
+      "sha256": "9afb7f61de88cce836a503ec267a2d0a549fefb7bfa9a411b6673946d63aa462"
+    },
+    {
+      "path": "assets/r66-visual-anchor-template.json",
+      "size": 711,
+      "sha256": "7c82a22edfcdbf61c7bcc7a799c68b5eeb6e24a641d5f7f929416e2646aed254"
+    },
+    {
+      "path": "assets/shared-visual-production-core.json",
+      "size": 2340,
+      "sha256": "d7efda58054b780a69ef0bf8ec784d4ff988378e4eb99eb56389085b3ea4e032"
+    },
+    {
+      "path": "assets/style-registry.json",
+      "size": 2252,
+      "sha256": "6013882f7f17e72befc16fe26d54fa7992aa0e0449c47d1732124335a101893d"
+    },
+    {
+      "path": "config/accounts.local.example.json",
+      "size": 220,
+      "sha256": "3f9173f589c3b4fc4e810ec386c9fe5b543142d8fd4380e52f60adffe4188371"
+    },
+    {
+      "path": "references/accepted-production-baselines.md",
+      "size": 3901,
+      "sha256": "98c253af25ab67bd06ecae51b41b52f7a684b681c7fb41b54e41b127e0b93103"
+    },
+    {
+      "path": "references/architecture-and-routing.md",
+      "size": 962,
+      "sha256": "941bf885ee117ef4d1c77977fb6c126caa80db967d6291bdf182228a5ba27642"
+    },
+    {
+      "path": "references/copy-driven-narration-contract.md",
+      "size": 1997,
+      "sha256": "fc54de8a5339260e80c474306eed8ee4d2123e51b6c8f5c3fedce5ade892bba3"
+    },
+    {
+      "path": "references/creative-profile-binding.md",
+      "size": 1016,
+      "sha256": "8db3cc2a55c30784dc1d7e740101dcb55d919f474a137d7a7079805f09d2aeed"
+    },
+    {
+      "path": "references/keyframe-snapshot-contract.md",
+      "size": 2283,
+      "sha256": "099ce7af178360cd1c8ec6c0be96247caaa599c19a0ff89f167f4f677b55be5e"
+    },
+    {
+      "path": "references/language-aware-narration-timing.md",
+      "size": 1335,
+      "sha256": "61785175d5d0998f809c5f1e4eea67a86c10090fcd208a6664abc8ff27398822"
+    },
+    {
+      "path": "references/m2-d-share-first.md",
+      "size": 1134,
+      "sha256": "031ad03cb94a5ac2761ded090610a82248033777e7c6ae2892aa9580840e7c7a"
+    },
+    {
+      "path": "references/m2-f-source-audio-restyle.md",
+      "size": 966,
+      "sha256": "34015f2a710657c16102d7a60f30d1e785aa7381ac6d0a47c1077d7e859c16ba"
+    },
+    {
+      "path": "references/migration-portability-contract.md",
+      "size": 2780,
+      "sha256": "b0379ff1feac1ddf80ff9ce8cb6ddf56da058fba801f4ed8b8a10dcb93c8c0f9"
+    },
+    {
+      "path": "references/narration-timing-contract.md",
+      "size": 2362,
+      "sha256": "99e5ef0ef9be84941166ac0d77cce300e0cd8a8ba91839ab7f2c5490411188f3"
+    },
+    {
+      "path": "references/phase-and-gates.md",
+      "size": 1834,
+      "sha256": "7c6d29ceec1d6eb4191310cc193afd4ced2c38974de3f6a96bdc6884a2bb3daf"
+    },
+    {
+      "path": "references/portable-project-contract.md",
+      "size": 11979,
+      "sha256": "bbea1bd7bc1bcb875cc3fc9e860f6ea8e82d9680c8fdb9c170698b439d2fcf1e"
+    },
+    {
+      "path": "references/prompt-contracts.md",
+      "size": 3954,
+      "sha256": "e50cb0b75779742f3e354526b85be45cb02f089f697daf132b82bbec40b4284b"
+    },
+    {
+      "path": "references/provider-adapters.md",
+      "size": 4019,
+      "sha256": "89cfaaed9aadf718a7f31e44f471d46d22643f883e0ee715d797e6125bdcef24"
+    },
+    {
+      "path": "references/r619-visual-state-machine.md",
+      "size": 2734,
+      "sha256": "589143953195e36c6dc26c9d3533bf1f14a07095c6d095c6a2837485cbd076c4"
+    },
+    {
+      "path": "references/r62-release-audit.md",
+      "size": 3683,
+      "sha256": "1298e343c649440598c154d6a2583123909f39b13feabfd219096826e4d42dc4"
+    },
+    {
+      "path": "references/r621-semantic-prompt-audit-contract.md",
+      "size": 2519,
+      "sha256": "21491660f36e5a32fe215fd4717e5340ffd119f9ec60f1b1cd2717cfaac2df1f"
+    },
+    {
+      "path": "references/r623-same-flow-audit.md",
+      "size": 2578,
+      "sha256": "c1e69955a85198fc2694637b054e51206199c6d75387862ebdf37df653a4dca4"
+    },
+    {
+      "path": "references/r624-source-event-evidence.md",
+      "size": 1080,
+      "sha256": "c128e206129fbd1047dadc18be9040777276035297fe4f3f6da6cd037bf25a38"
+    },
+    {
+      "path": "references/r626-named-accent-contract.md",
+      "size": 2652,
+      "sha256": "9d2b6d013d5a3dece042ec8104a779c3ef65cbbaa13d5a3510db0c399ae62a01"
+    },
+    {
+      "path": "references/r627-zero-call-continuation.md",
+      "size": 2904,
+      "sha256": "d169589d7541655850a8c9ada70351413f36da72a9277a3db0c10115931ba6f0"
+    },
+    {
+      "path": "references/r628-p7-qc-authority.md",
+      "size": 1900,
+      "sha256": "dbdb5cc1bb595f1115915e9e727fa0a0172f307250d2eaacc116a6f7726373e3"
+    },
+    {
+      "path": "references/r632-semantic-integrity-contract.md",
+      "size": 1713,
+      "sha256": "ab6f37dac4faa8cbe7a5c4db44859b7a05e07f22264ecef1b943fe1f013109cc"
+    },
+    {
+      "path": "references/r633-atomic-visibility-contract.md",
+      "size": 1640,
+      "sha256": "d02d1bb1cdb377839beef9d85d14dcae965a6f230538dd887a8cc9d1af46b475"
+    },
+    {
+      "path": "references/r634-fact-and-state-flow-contract.md",
+      "size": 3162,
+      "sha256": "c03bb3f8022c5f2f2aa1911db4b0f3c381d31b09ff0a0b2208a65a39cbe06dd2"
+    },
+    {
+      "path": "references/release-notes-r613.md",
+      "size": 849,
+      "sha256": "f702c030bc47829258cb7291611cd4f1ab82e8c56c5ac1d167bb4578e7c84bc9"
+    },
+    {
+      "path": "references/scene-slice-and-grid.md",
+      "size": 5563,
+      "sha256": "a78cd02795cfda13db0eefc723b4755b4158b0a738aef4730de757698d954b45"
+    },
+    {
+      "path": "references/source-audio-restyle-contract.md",
+      "size": 3127,
+      "sha256": "a015d2236978017efbeb9ab132508eadb47d18fc69f963ac7d0b3775a0af0da9"
+    },
+    {
+      "path": "references/source-content-inheritance-contract.md",
+      "size": 1192,
+      "sha256": "8638d45cd707c033a6349170eb1ae62e0802a62add4fde0a3e4b79a0b9c10ff8"
+    },
+    {
+      "path": "references/style-c-ghibli-pet-narrative.md",
+      "size": 1581,
+      "sha256": "cdfd14ee9a1eacf745026b0eed5b070368d383ed634d3602e64af3f86789a5a9"
+    },
+    {
+      "path": "references/style-d-indoor-care.md",
+      "size": 1535,
+      "sha256": "7932c197572299989953bce4bd30693a52f33bb8ca07d24f4337d7112d179abf"
+    },
+    {
+      "path": "references/style-dog-high-share-mono-comic.md",
+      "size": 3355,
+      "sha256": "25a357515225f145b1b452db8e96138b6cb2a010543b03148772bf7fd265a646"
+    },
+    {
+      "path": "references/style-e-reaction-resonance.md",
+      "size": 1541,
+      "sha256": "903dfdfdbe063bc887fd0739c7de2e980fb0599eb3ade56b826411bfa8eb9794"
+    },
+    {
+      "path": "references/style-selection.md",
+      "size": 1213,
+      "sha256": "faf1cd1a8359c6a911535660c3363d933834d03b2f88b1b456d028a711ee3d2b"
+    },
+    {
+      "path": "references/visual-anchor-contract.md",
+      "size": 3510,
+      "sha256": "29a1798e21bec8ddd7d77ad4ca514d9698bdef696e67cb3f1b060f3aa9da884f"
+    },
+    {
+      "path": "requirements.txt",
+      "size": 44,
+      "sha256": "6ba53095d3080ae958202d7cf8fbd109e5b7dd404927431591c0732db25293fd"
+    },
+    {
+      "path": "scripts/accent_color_contract.py",
+      "size": 4959,
+      "sha256": "771e75e9d5e5c8102d6204599475c947765e9a5951098dd1a32750e4e1961221"
+    },
+    {
+      "path": "scripts/accept_r641_expression_qc.py",
+      "size": 10127,
+      "sha256": "f9da8cd69af82073c4f3459b5a56c1282bb4a84bebb8b60077547827e7c94115"
+    },
+    {
+      "path": "scripts/audit_r634_project_integrity.py",
+      "size": 2448,
+      "sha256": "00bb7a77c8c403870a5a939f795698be3153a32cbfcb61ce6485354eb2176672"
+    },
+    {
+      "path": "scripts/audit_r69_style_output.py",
+      "size": 9509,
+      "sha256": "bd7d302c08a59e5fd0a50d4f81d0b7fd304e4058f07514aafc6f063003479cef"
+    },
+    {
+      "path": "scripts/build_manifest.py",
+      "size": 1169,
+      "sha256": "54a37602ac45f2e302a27a139b52c73ac71d57ee862abc65843499be00bd2911"
+    },
+    {
+      "path": "scripts/build_r619_source_audio_p9.py",
+      "size": 16886,
+      "sha256": "aebd3a8162b06d32fa2f3e4ae823dea40ed88a2eb49f4d2f63b57e5a34bb4a12"
+    },
+    {
+      "path": "scripts/build_r625_p7_packages.py",
+      "size": 16875,
+      "sha256": "6a07d3a509ae5f000e9f8f89a54a0e55b67e1f2fd879b65968fdb84b29244133"
+    },
+    {
+      "path": "scripts/build_r626_named_accent_reaudit.py",
+      "size": 7915,
+      "sha256": "cca62c43137f3ad6e81a5d5b909edceb025da551a394b6a909ee7f80c7976c58"
+    },
+    {
+      "path": "scripts/build_r633_postdub_p7_packages.py",
+      "size": 18638,
+      "sha256": "621dc410fdb083e2f4567eb408dbf5104115e20a957887861ad1a7bf513b0656"
+    },
+    {
+      "path": "scripts/check_r62_environment.py",
+      "size": 3233,
+      "sha256": "d3dc723f11805c163775815ac4610c8d56045f649ed1178bb39a0041a0024980"
+    },
+    {
+      "path": "scripts/compile_r623_video_prompt.py",
+      "size": 15276,
+      "sha256": "42d9a95fa5a044d6b90fb9f9e434da65a1a71f229665143a606dcbe259e5bfe4"
+    },
+    {
+      "path": "scripts/compile_r62_grid_prompt.py",
+      "size": 26567,
+      "sha256": "0b7a24b4aa2c22d14a2cd4d2f9cdc31bb6c5bf2337bcbe1696346a86800b168f"
+    },
+    {
+      "path": "scripts/export_r616_direct_jianying_draft.py",
+      "size": 8260,
+      "sha256": "0db59f7fdee626738c1dd58ce7074172e5d0cf0a99d57949f138fc2c948125e4"
+    },
+    {
+      "path": "scripts/extract_r62_start_cell.py",
+      "size": 3385,
+      "sha256": "4dc3d2003067fe6f7d69349de6c3878a6937e61560a29e29c388db3d84e972fb"
+    },
+    {
+      "path": "scripts/extract_r66_end_state_cell.py",
+      "size": 3730,
+      "sha256": "1ef570df6ac6f467faa23c8a86f87cd8965ce0ee71a2ca130485a56df4a34365"
+    },
+    {
+      "path": "scripts/finalize_r613_release.py",
+      "size": 10268,
+      "sha256": "7b7bc2ebef7749f20f6cacc021b2623071f7b71dd697f144fb585ec7e7e0c570"
+    },
+    {
+      "path": "scripts/finalize_r614_release.py",
+      "size": 11877,
+      "sha256": "4e307613d6c30673eb8f3e4e0b384823c57f5e4eebcd254914d73ced96799dc0"
+    },
+    {
+      "path": "scripts/finalize_r66_visual_anchor_review.py",
+      "size": 4399,
+      "sha256": "0a02dddbf35da036a0a7e39b348dd25a95381d47b5599e9d0c887e26df92e9b2"
+    },
+    {
+      "path": "scripts/inspect_r623_video_layout.py",
+      "size": 7201,
+      "sha256": "6305efb9230957c9c28106a500d7867ce4a163b21b4c4680b09c152d80a5a74e"
+    },
+    {
+      "path": "scripts/ocr_r62_cover.py",
+      "size": 3194,
+      "sha256": "0d209a8a37f773dd3c5fb05a280073b192dd2b70c78e76b960ff7b6f03d974ec"
+    },
+    {
+      "path": "scripts/prepare_r622_video_recovery_packages.py",
+      "size": 5582,
+      "sha256": "c147c38e27211adea8d1b077104de6b1aeb1ac79678c38c678c446f6b36f733b"
+    },
+    {
+      "path": "scripts/prepare_r62_source_evidence.py",
+      "size": 10737,
+      "sha256": "89a7a355129cd89e20c84392c61c184670c98235b5af4a8edf608fa686d498be"
+    },
+    {
+      "path": "scripts/prepare_r68_anchored_grid_call_package.py",
+      "size": 18907,
+      "sha256": "d8d5a0eba1d0e1f3b289c968c972f5101227891991f034c962ec4a4c0ce28c71"
+    },
+    {
+      "path": "scripts/prepare_r69_correction_package.py",
+      "size": 19937,
+      "sha256": "c3e6cc97a01b6f52c959ca1a5ff8eaf0cf9f7d1cdb569bb24020d56be7e1f900"
+    },
+    {
+      "path": "scripts/r625_p7_timing.py",
+      "size": 4993,
+      "sha256": "f42d9e945a8eaca0c858568a9010b553cd011dbf53aaaf9e07a34761856d9cde"
+    },
+    {
+      "path": "scripts/r628_p6_qc_authority.py",
+      "size": 4396,
+      "sha256": "3ce9f810bc0c7ad75ed96e6fcdbd08761df2638bbb39650a94ddbffd58d5dca2"
+    },
+    {
+      "path": "scripts/r628_source_event_bridge.py",
+      "size": 6657,
+      "sha256": "d5378fde5e3788104753f3c5c6e293868eb19752ff51c9585f4bbf0bf5222fde"
+    },
+    {
+      "path": "scripts/r62_project.py",
+      "size": 92939,
+      "sha256": "f75393f2d3303ebec5c4a063d77697d165f0b18dfaa70b883e4dc6a2b8b27bcd"
+    },
+    {
+      "path": "scripts/r634_integrity_contract.py",
+      "size": 24475,
+      "sha256": "42e49b9170aeb58c0c83068e2d1849d87bc31d3107fb1d753e8582411b2a350b"
+    },
+    {
+      "path": "scripts/r635_source_content_lock.py",
+      "size": 22938,
+      "sha256": "379e469a88f7001c01ef87b39d9d7232067883bd7955874bcc3ffb03ab8cbe77"
+    },
+    {
+      "path": "scripts/r637_content_lineage.py",
+      "size": 2169,
+      "sha256": "8a1723d4a761ce40a98d457999b46bd86927b74d84b6f2259d961a8b0b1afcf8"
+    },
+    {
+      "path": "scripts/r639_keyframe_contract.py",
+      "size": 10921,
+      "sha256": "08d7e6656b2db508b7b088b8d99841706a6f747d36036d44f4dbde5382f96df2"
+    },
+    {
+      "path": "scripts/r641_expression_contract.py",
+      "size": 6364,
+      "sha256": "0cf471cf5b7b0e5b4197507adf24737a4ff8d41c7b3e1be893c003dcb9dcb522"
+    },
+    {
+      "path": "scripts/reconcile_r619_runtime_audio_policy.py",
+      "size": 4342,
+      "sha256": "84f8ceb987d10d815cd5f19fe321ab7d29bff259a4b2cc982dbf8c17a254986c"
+    },
+    {
+      "path": "scripts/release_contract.py",
+      "size": 3156,
+      "sha256": "df9e2149166e91669ef8e723eba9f83da4360b099b686912c253475591cc551e"
+    },
+    {
+      "path": "scripts/run_df_self_check.py",
+      "size": 4314,
+      "sha256": "adafc3f02b75111706dc00fc9b8826464860edc07b16d78ea4186f2926b1edae"
+    },
+    {
+      "path": "scripts/submit_kie_r622_video_task.py",
+      "size": 11155,
+      "sha256": "e4dd1606cf129f1d179d670aaefd46cbc0c9365c7a78e5fa2903b498e770f57b"
+    },
+    {
+      "path": "scripts/transcribe_r62_source.py",
+      "size": 2948,
+      "sha256": "1356200bdc69d26956b7014805b97e363f5e74a98896f803f69de733d90f4ee1"
+    },
+    {
+      "path": "scripts/validate_distribution.py",
+      "size": 5697,
+      "sha256": "24a7d090a8b9aac14c2323130b9a753970301018e472ed5e41a93b671ee63ff4"
+    },
+    {
+      "path": "scripts/validate_r610_portability_revision.py",
+      "size": 6136,
+      "sha256": "b5d3ca2d6fee31eca632204d015aa579276a83ede401d57f07c5dd49ad6d4070"
+    },
+    {
+      "path": "scripts/validate_r611_portability_revision.py",
+      "size": 6146,
+      "sha256": "d5e9d5a8020cd92904e42efdcb90b8104a9755adb9d6037b821bd75ec6be58cc"
+    },
+    {
+      "path": "scripts/validate_r612_portability_revision.py",
+      "size": 6596,
+      "sha256": "56844e5733342ee09f0a6826c0debf6569bda9e3716d54b8652611389ccbe779"
+    },
+    {
+      "path": "scripts/validate_r614_editing_alignment.py",
+      "size": 6536,
+      "sha256": "81c46dbe0d5aa5a9800d1c97f06406467975b3aeb942288a2f636251269e288f"
+    },
+    {
+      "path": "scripts/validate_r614_narration_timing.py",
+      "size": 10236,
+      "sha256": "21389e4ec85e894111b802195935817644564f5facbb41f50b85ead8c38bf993"
+    },
+    {
+      "path": "scripts/validate_r615_narration_plan.py",
+      "size": 15457,
+      "sha256": "851d2e3024f98f9cc6f9cf37fffa391c4cd782300d565c015b9020960614d980"
+    },
+    {
+      "path": "scripts/validate_r615_p4_binding.py",
+      "size": 5144,
+      "sha256": "d0715fdcd009d834aa81a18ace017151701e4a675efee5c9780682e428314731"
+    },
+    {
+      "path": "scripts/validate_r616_m2d_production_profile.py",
+      "size": 10089,
+      "sha256": "f3c6c069e6cb4a6fd369c5bb28ede1b3d2b61e0eb93ce4945fcea36152aaee99"
+    },
+    {
+      "path": "scripts/validate_r617_source_audio_plan.py",
+      "size": 18674,
+      "sha256": "d94d096731b27eb5a1de78e9e3edfdff32c53760f7ff856af7e59e15bcaeb7cb"
+    },
+    {
+      "path": "scripts/validate_r619_state_contract.py",
+      "size": 29572,
+      "sha256": "614d0c76b16b7aa58cec61fd7c9a642ca4c8c7bcd7e872a9423fd8276f29c07d"
+    },
+    {
+      "path": "scripts/validate_r619_visual_core.py",
+      "size": 12666,
+      "sha256": "2b10fc47194b52d0797b5e0d1f427bf10c7d2527a1e6d17f642c36f4f1afcc52"
+    },
+    {
+      "path": "scripts/validate_r620_source_audio_scene_plan.py",
+      "size": 254,
+      "sha256": "c91c5ee4331737cd021c44b6630c71c4b54dc65effb92b67b10ce3d77ade2e87"
+    },
+    {
+      "path": "scripts/validate_r620_source_macro_scene_evidence.py",
+      "size": 7977,
+      "sha256": "1c87b755dc7f9bb12fdbf4cd108f4592c35e14df6a7c029eb41a0ed347c0885c"
+    },
+    {
+      "path": "scripts/validate_r623_same_flow.py",
+      "size": 8111,
+      "sha256": "d9e8a4f8c7a50e5f4a92c16c60cd3056e92b76fe2c072a7171adc19cca22d934"
+    },
+    {
+      "path": "scripts/validate_r623_video_prompt_audit.py",
+      "size": 9873,
+      "sha256": "5647ca77e3c0202608a26269097c15290b5bafe3a5f949eac728cb2bcf73db7e"
+    },
+    {
+      "path": "scripts/validate_r623_video_qc.py",
+      "size": 10244,
+      "sha256": "64c84c4e06b578d172e4b9512454906c635f450270c52b0df277cefc1d067e90"
+    },
+    {
+      "path": "scripts/validate_r624_source_event_evidence.py",
+      "size": 8945,
+      "sha256": "dc84cef58e229eeb418d996a2c31d7be6c1fff4bc8378440033fb2a9b568afbc"
+    },
+    {
+      "path": "scripts/validate_r62_call_package.py",
+      "size": 33744,
+      "sha256": "63b4540b09fbc4e8c536b35143e8df426b4bf799da2e8e91dd786595bc39bd1d"
+    },
+    {
+      "path": "scripts/validate_r62_imagegen_capability.py",
+      "size": 5409,
+      "sha256": "909e94e287c61a988fa16298c71f6e13a7466a4e8cd316213aadd335d6cdf7a9"
+    },
+    {
+      "path": "scripts/validate_r62_job.py",
+      "size": 25002,
+      "sha256": "fbf81d59e5aa2b7aedad1ffb31d42801a766adccc90bb8af3c1774d0934320e4"
+    },
+    {
+      "path": "scripts/validate_r62_p8_package.py",
+      "size": 18344,
+      "sha256": "317b953f7c851201c8d27df909544d07df3e3d91e11872f61df30334fd99a107"
+    },
+    {
+      "path": "scripts/validate_r62_scene_plan.py",
+      "size": 41880,
+      "sha256": "7c7f30345fcd4f28ab3229846b8ef89dbb1c0e006494a2c382fbcbc1ea34a5d3"
+    },
+    {
+      "path": "scripts/validate_r62_segment_package.py",
+      "size": 18656,
+      "sha256": "3c80b4340fa8062a5d37154543a26c1e5d9fe218393ddf64649ecf463481681c"
+    },
+    {
+      "path": "scripts/validate_r62_timeline_evidence.py",
+      "size": 8706,
+      "sha256": "e541c2705f1fa5cc1034243e7f0081df6982787967fa130a5048ec5e8721814b"
+    },
+    {
+      "path": "scripts/validate_r630_accepted_baselines.py",
+      "size": 4250,
+      "sha256": "3df68e88cb4655d487845ea91b0b5083b350c325d7cf56cff99b639c843ee6c0"
+    },
+    {
+      "path": "scripts/validate_r64_video_qc.py",
+      "size": 6425,
+      "sha256": "d854bf8f10ba2acc0595597346f8e4808c50774b6aa43e63f99cc6b7e553f419"
+    },
+    {
+      "path": "scripts/validate_r65_no_task_reconciliation.py",
+      "size": 5329,
+      "sha256": "a5700e82c860f039199ff8247a6cbc8b5877ee571ac2ebd8a5a33f7a93cefc68"
+    },
+    {
+      "path": "scripts/validate_r66_end_state_receipt.py",
+      "size": 5951,
+      "sha256": "840cdc38671155872fb608a4b6749e5a57c9a1a0177a029f400fee885932ae46"
+    },
+    {
+      "path": "scripts/validate_r66_migration_receipt.py",
+      "size": 13309,
+      "sha256": "b8642af1d67f18261ac6474528f0f75c8cde89a3596599c37f8a841907491085"
+    },
+    {
+      "path": "scripts/validate_r66_visual_anchor.py",
+      "size": 4005,
+      "sha256": "f9855007eac1f0e1d8a7fb1d625d9ea44dcd1205c3de86ded69aa6b909c2eba3"
+    },
+    {
+      "path": "scripts/validate_r67_portability_revision.py",
+      "size": 7681,
+      "sha256": "19e3f980b7ebb106f73c6383d8e3232b98d16705768e68b27e25084a8d479ff7"
+    },
+    {
+      "path": "scripts/validate_r69_portability_revision.py",
+      "size": 6210,
+      "sha256": "00c7b462974e2266153f85a984216866ed9ceb4820a4933ec96138ddc395f8a5"
+    },
+    {
+      "path": "scripts/verify_r622_provider_task_identity.py",
+      "size": 8713,
+      "sha256": "c8845b6f39f822514674fdc6f9a37be452c6b2142e8323f26cd2eff8a099ed1b"
+    }
+  ]
+}

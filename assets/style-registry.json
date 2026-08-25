@@ -1,0 +1,37 @@
+{
+  "schema_version": "R6.41.2-DF-STYLE-REGISTRY-1.0",
+  "default_style": "DOG_HIGH_SHARE_MONO_COMIC",
+  "styles": {
+    "DOG_HIGH_SHARE_MONO_COMIC": {
+      "reference": "references/style-dog-high-share-mono-comic.md",
+      "prompt_core": "粗线条单色宠物漫画风；除P1登记的局部强调色外，只使用黑、白与中性灰。狗是第一主体，主人只辅助动作和情绪表达；不出现文字。",
+      "color_mode": "CLOSED_MONO_WITH_NAMED_ACCENTS",
+      "negatives": ["普通暖彩动漫", "写实摄影", "光泽3D", "字幕文字标志水印", "额外肢体或穿模"]
+    },
+    "DOG_STYLE_C_GHIBLI_PET_NARRATIVE": {
+      "reference": "references/style-c-ghibli-pet-narrative.md",
+      "prompt_core": "温暖日式手绘2D生活叙事，柔和自然光、克制色彩和可信室内细节；不复刻任何具体影视画面。",
+      "color_mode": "SOFT_NATURAL_COLOR",
+      "negatives": ["具体电影画面复刻", "写实摄影", "光泽3D", "文字标志水印", "不可能动作路径"]
+    },
+    "DOG_STYLE_D_INDOOR_CARE_KEYFRAME": {
+      "reference": "references/style-d-indoor-care.md",
+      "prompt_core": "日式2D轻写实室内宠物照护，线条干净、自然光柔和、色彩中性，清楚展示人物、工具、动作、接触面和结果。",
+      "color_mode": "NEUTRAL_CARE_2D",
+      "negatives": ["摆拍代替照护动作", "无依据医疗行为", "文字标志水印", "穿模或漂浮工具"]
+    },
+    "DOG_STYLE_E_REACTION_RESONANCE": {
+      "reference": "references/style-e-reaction-resonance.md",
+      "prompt_core": "日式2D轻拟人反应共鸣，通过清楚触发和前后反应形成对比；保持犬类身体结构，幽默温暖但不闹剧化。",
+      "color_mode": "WARM_REACTION_2D",
+      "negatives": ["无意义反应填格", "狗长出人手", "文字气泡水印", "光泽3D或过饱和特效"]
+    },
+    "CUSTOM_NAMED_STYLE": {
+      "reference": "references/style-selection.md",
+      "prompt_core": "使用P1完整锁定并审核通过的自定义风格合同，不混入其它风格模块。",
+      "color_mode": "PROJECT_LOCKED",
+      "negatives": ["未批准风格混合", "具体版权画面复刻", "风格覆盖动作可读性"]
+    }
+  }
+}
+

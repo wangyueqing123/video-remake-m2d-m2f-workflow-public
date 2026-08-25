@@ -1,0 +1,79 @@
+{
+  "schema_version": "R6.2-TIMELINE-EVIDENCE-1.0",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "route_id": "M2_D_SHARE_FIRST",
+  "source_video_sha256": "REPLACE_WITH_64_HEX_SHA256",
+  "duration_s": 3.0,
+  "authority_role": "SEMANTIC_FACT_EVIDENCE",
+  "samples": [
+    {
+      "sample_id": "T0000",
+      "time_s": 0.0,
+      "shot_id": "SH01",
+      "observed_setting": "REPLACE_WITH_VISIBLE_SETTING",
+      "actors": ["REPLACE_WITH_VISIBLE_ACTOR"],
+      "large_action_or_state": "REPLACE_WITH_VISIBLE_LARGE_ACTION_OR_STATE",
+      "visible_result": "REPLACE_WITH_VISIBLE_RESULT_OR_NO_NEW_RESULT",
+      "spoken_content": "",
+      "confidence": "HIGH",
+      "uncertainty": "",
+      "narrative_function": "REPLACE_WITH_NARRATIVE_FUNCTION",
+      "content_facts": ["REPLACE_WITH_OBSERVED_FACT"]
+    },
+    {
+      "sample_id": "T0001",
+      "time_s": 1.0,
+      "shot_id": "SH01",
+      "observed_setting": "REPLACE_WITH_VISIBLE_SETTING",
+      "actors": ["REPLACE_WITH_VISIBLE_ACTOR"],
+      "large_action_or_state": "REPLACE_WITH_VISIBLE_LARGE_ACTION_OR_STATE",
+      "visible_result": "REPLACE_WITH_VISIBLE_RESULT_OR_NO_NEW_RESULT",
+      "spoken_content": "",
+      "confidence": "HIGH",
+      "uncertainty": "",
+      "narrative_function": "REPLACE_WITH_NARRATIVE_FUNCTION",
+      "content_facts": ["REPLACE_WITH_OBSERVED_FACT"]
+    },
+    {
+      "sample_id": "T0002",
+      "time_s": 2.0,
+      "shot_id": "SH02",
+      "observed_setting": "REPLACE_WITH_VISIBLE_SETTING",
+      "actors": ["REPLACE_WITH_VISIBLE_ACTOR"],
+      "large_action_or_state": "REPLACE_WITH_VISIBLE_LARGE_ACTION_OR_STATE",
+      "visible_result": "REPLACE_WITH_VISIBLE_RESULT_OR_NO_NEW_RESULT",
+      "spoken_content": "",
+      "confidence": "HIGH",
+      "uncertainty": "",
+      "narrative_function": "REPLACE_WITH_NARRATIVE_FUNCTION",
+      "content_facts": ["REPLACE_WITH_OBSERVED_FACT"]
+    },
+    {
+      "sample_id": "T0003",
+      "time_s": 3.0,
+      "shot_id": "SH02",
+      "observed_setting": "REPLACE_WITH_VISIBLE_SETTING",
+      "actors": ["REPLACE_WITH_VISIBLE_ACTOR"],
+      "large_action_or_state": "REPLACE_WITH_VISIBLE_LARGE_ACTION_OR_STATE",
+      "visible_result": "REPLACE_WITH_VISIBLE_RESULT_OR_NO_NEW_RESULT",
+      "spoken_content": "",
+      "confidence": "HIGH",
+      "uncertainty": "",
+      "narrative_function": "REPLACE_WITH_NARRATIVE_FUNCTION",
+      "content_facts": ["REPLACE_WITH_OBSERVED_FACT"]
+    }
+  ],
+  "real_cuts": [
+    {
+      "cut_id": "C01",
+      "time_s": 1.5,
+      "before_sample_id": "T0001",
+      "after_sample_id": "T0002",
+      "before_time_s": 1.49,
+      "after_time_s": 1.51,
+      "kind": "HARD_CUT",
+      "visible_change": "REPLACE_WITH_VISIBLE_CHANGE"
+    }
+  ],
+  "critical_uncertainties": []
+}

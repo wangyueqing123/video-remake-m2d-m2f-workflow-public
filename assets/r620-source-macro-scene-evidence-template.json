@@ -1,0 +1,56 @@
+{
+  "schema_version": "R6.20-SOURCE-MACRO-SCENE-EVIDENCE-1.0",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "route_id": "M2_F_SOURCE_AUDIO_RESTYLE",
+  "status": "VERIFIED",
+  "source_video": {
+    "relative_path": "inputs/source.mp4",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "duration_s": 0.0
+  },
+  "observation_policy": {
+    "coverage_start_s": 0.0,
+    "coverage_end_s": 0.0,
+    "maximum_sampling_interval_s": 1.0,
+    "event_boundary_reviewed": true,
+    "critical_uncertainties": []
+  },
+  "authority_scope": {
+    "granted": [
+      "MACRO_SCENE",
+      "ACTION_SUBJECT",
+      "ACTION_OBJECT",
+      "ACTION_PATH",
+      "CAUSAL_ORDER",
+      "VISIBLE_RESULT"
+    ],
+    "denied": [
+      "SOURCE_PIXELS",
+      "SOURCE_COMPOSITION",
+      "SOURCE_CAMERA",
+      "SOURCE_CUTS",
+      "GENERATION_REFERENCE_IMAGE"
+    ]
+  },
+  "macro_scenes": [
+    {
+      "source_scene_id": "MS01",
+      "source_start_s": 0.0,
+      "source_end_s": 0.0,
+      "narrative_function": "REPLACE_WITH_FUNCTION",
+      "action_contract": {
+        "action_subject": "REPLACE_WITH_SUBJECT",
+        "action_object": "REPLACE_WITH_OBJECT",
+        "action_path": "REPLACE_WITH_SOURCE_OBSERVED_MACRO_PATH",
+        "causal_order": "REPLACE_WITH_CAUSAL_ORDER",
+        "visible_result": "REPLACE_WITH_SOURCE_OBSERVED_RESULT",
+        "forbidden_substitutions": [
+          "REPLACE_WITH_WRONG_METAPHOR_OR_ACTION"
+        ]
+      },
+      "evidence_times_s": [0.0],
+      "confidence": "HIGH",
+      "uncertainty": ""
+    }
+  ]
+}

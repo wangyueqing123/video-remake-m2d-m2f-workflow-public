@@ -1,0 +1,61 @@
+{
+  "schema_version": "R6.41.2-DF-SHARED-VISUAL-CORE-1.0",
+  "core_id": "DOG_DF_VISUAL_CORE_V3",
+  "status": "FROZEN",
+  "applies_to_routes": [
+    "M2_D_SHARE_FIRST",
+    "M2_F_SOURCE_AUDIO_RESTYLE"
+  ],
+  "principle": "M2-D与M2-F共用场景、空间可达性、视觉锚点、Prompt编译、P6拓扑审核和成本纪律；文案、音频、时间权威与内容证据严格隔离；画风由P1独立选择。",
+  "style_contract": {
+    "default": "DOG_HIGH_SHARE_MONO_COMIC",
+    "selected_at_p1": true,
+    "style_is_independent_of_route": true,
+    "style_may_not_override_action_legibility": true,
+    "style_change_invalidates_downstream": true
+  },
+  "p1_state_separation_contract": {
+    "identity_scope": "STABLE_ATTRIBUTES_ONLY",
+    "mutable_state_authority": "P4_STATE_LEDGER",
+    "mutable_location_or_terminal_state_in_identity": "BLOCK"
+  },
+  "p4_spatial_contract": {
+    "future_scene_preflight_required": true,
+    "subject_support_surface_required": true,
+    "prop_support_surface_required": true,
+    "open_action_path_required": true,
+    "decisive_contact_reachability_required": true,
+    "camera_proof_required": true,
+    "occluded_critical_topology_policy": "BLOCK_NOT_VERIFIABLE"
+  },
+  "p4_state_machine_contract": {
+    "cell_phases": ["HOLD", "TRANSFER", "TERMINAL"],
+    "interaction_phases": ["BEFORE_CONTACT", "CONTACT", "AFTER_CONTACT", "NOT_APPLICABLE"],
+    "transition_change_list_must_equal_ledger_delta": true,
+    "contact_flag_must_equal_interaction_phase": true,
+    "terminal_transition_cannot_precede_contact": true
+  },
+  "p5_compiler_contract": {
+    "compile_support_surfaces": true,
+    "compile_open_action_path": true,
+    "compile_decisive_contact": true,
+    "compile_camera_proofs": true,
+    "compile_style_profile": true,
+    "compile_one_authoritative_mutable_state_table": true,
+    "prompt_only_repair_of_infeasible_geometry_forbidden": true
+  },
+  "p6_qc_contract": {
+    "per_cell_evidence_required": true,
+    "critical_contact_visibility_required_when_applicable": true,
+    "topology_safe_end_state_required": true,
+    "style_continuity_required": true,
+    "unsafe_output_may_become_reference": false
+  },
+  "cost_contract": {
+    "whole_grid_only": true,
+    "baseline_calls_per_grid": 1,
+    "consolidated_corrections_per_grid": 1,
+    "automatic_retry": false
+  }
+}
+

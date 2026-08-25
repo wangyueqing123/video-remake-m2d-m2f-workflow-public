@@ -1,0 +1,65 @@
+{
+  "schema_version": "R6.20-SOURCE-AUDIO-SCENE-PLAN-2.0",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "route_id": "M2_F_SOURCE_AUDIO_RESTYLE",
+  "status": "LOCKED",
+  "timing_authority": "SOURCE_AUDIO_MASTER",
+  "source_audio": {
+    "relative_path": "inputs/source.mp3",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "duration_s": 0.0,
+    "playback_speed": 1.0,
+    "asset_usage": "FULL_TRACK_UNCHANGED"
+  },
+  "source_copy": {
+    "relative_path": "inputs/source-copy.txt",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "encoding": "UTF-8",
+    "policy": "VERBATIM_NO_REWRITE"
+  },
+  "source_macro_scene_evidence": {
+    "relative_path": "artifacts/P2/SOURCE_MACRO_SCENE_EVIDENCE.json",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256"
+  },
+  "visual_authority": {
+    "derivation": "SOURCE_AUDIO_COPY_PLUS_SOURCE_VIDEO_MACRO_SCENES",
+    "source_video_semantics": "MACRO_SCENE_ACTION_CAUSAL_ONLY",
+    "source_video_pixels_camera_cuts": "NO_AUTHORITY",
+    "source_video_keyframes_as_generation_input": false
+  },
+  "alignment": {
+    "method": "LOCAL_ASR_PLUS_VERBATIM_COPY_ALIGNMENT",
+    "status": "VERIFIED",
+    "uncertainties": []
+  },
+  "segments": [
+    {
+      "segment_id": "V01",
+      "start_s": 0.0,
+      "end_s": 0.0,
+      "copy_char_start": 0,
+      "copy_char_end": 0,
+      "exact_copy": "REPLACE_WITH_EXACT_COPY_SLICE",
+      "source_scene_ids": [
+        "MS01"
+      ],
+      "inherited_action_contracts": [
+        {
+          "action_subject": "REPLACE_WITH_SUBJECT",
+          "action_object": "REPLACE_WITH_OBJECT",
+          "action_path": "REPLACE_WITH_SOURCE_OBSERVED_MACRO_PATH",
+          "causal_order": "REPLACE_WITH_CAUSAL_ORDER",
+          "visible_result": "REPLACE_WITH_SOURCE_OBSERVED_RESULT",
+          "forbidden_substitutions": [
+            "REPLACE_WITH_WRONG_METAPHOR_OR_ACTION"
+          ]
+        }
+      ],
+      "visual_obligations": [
+        "REPLACE_WITH_VISIBLE_COPY_MEANING"
+      ],
+      "large_action": "REPLACE_WITH_COMPLETE_COPY_DERIVED_ACTION",
+      "visible_result": "REPLACE_WITH_VISIBLE_RESULT"
+    }
+  ]
+}

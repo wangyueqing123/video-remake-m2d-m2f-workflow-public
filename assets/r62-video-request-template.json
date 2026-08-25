@@ -1,0 +1,60 @@
+{
+  "schema_version": "R6.2-P8-VIDEO-REQUEST-1.0",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "phase": "P8",
+  "status": "WAIT_REVIEW",
+  "call_kind": "VIDEO_API",
+  "call_ordinal": 1,
+  "request_id": "VIDEO-V01-R1",
+  "segment_id": "V01",
+  "grid_id": "G01",
+  "provider": "KIE.AI",
+  "model": "grok-imagine-video-1-5-preview",
+  "endpoint": "https://api.kie.ai/api/v1/jobs/createTask",
+  "provider_adapter_profile": "GROK_KIE_GRID_FIRST_PLACEHOLDER_SECOND",
+  "upload_batch_id": "UPLOAD-V01-R1",
+  "upload_submission_id": "REPLACE_WITH_RECORDED_UPLOAD_SUBMISSION_ID",
+  "segment_package": {
+    "relative_path": "artifacts/P7/V01_SEGMENT_PACKAGE.json",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256"
+  },
+  "request": {
+    "prompt_relative_path": "artifacts/P7/V01_VIDEO_PROMPT.txt",
+    "prompt_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "visual_inputs": [
+      {
+        "index": 0,
+        "role": "SEGMENT_ACTION_GRID",
+        "remote_url": "https://REPLACE_WITH_TEMP_URL",
+        "source_sha256": "REPLACE_WITH_64_HEX_SHA256"
+      },
+      {
+        "index": 1,
+        "role": "SEGMENT_START_PLACEHOLDER",
+        "remote_url": "https://REPLACE_WITH_TEMP_URL",
+        "source_sha256": "REPLACE_WITH_64_HEX_SHA256"
+      }
+    ],
+    "aspect_ratio": "9:16",
+    "resolution": "480p",
+    "duration_s": 4,
+    "duration_derivation": {
+      "policy": "CEIL_APPROVED_SEGMENT_SPAN",
+      "approved_segment_span_s": 4.0,
+      "derived_duration_s": 4
+    },
+    "nsfw_checker": true
+  },
+  "cost": {
+    "currency": "USD",
+    "unit_price_per_second": 0.012,
+    "estimated_cost": 0.048,
+    "maximum_authorized_cost": 0.048
+  },
+  "idempotency_key": "REPLACE_WITH_UNIQUE_IDEMPOTENCY_KEY",
+  "maximum_task_creation_attempts": 1,
+  "automatic_retry_allowed": false,
+  "timeout_action": "QUERY_STATUS_WITH_SAME_TASK_OR_IDEMPOTENCY_KEY_NO_RESUBMIT",
+  "human_approval_required": true,
+  "one_approval_one_submission": true
+}

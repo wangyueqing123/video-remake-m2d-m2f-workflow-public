@@ -1,0 +1,44 @@
+{
+  "schema_version": "R6.23-SAME-FLOW-INVARIANTS-1.0",
+  "source_release": "R6.22",
+  "target_release": "R6.23",
+  "change_class": "IMPLEMENTATION_HARDENING_ONLY",
+  "immutable_execution_contract": {
+    "scene_unit": "COMPLETE_MACRO_ACTION_SCENE",
+    "segment_grid_cardinality": "ONE_TO_ONE",
+    "grid_generation": "ONE_WHOLE_GRID_PER_SEGMENT",
+    "grid_cell_repair_calls": 0,
+    "start_frame_method": "DETERMINISTIC_CROP_FROM_CELL_1",
+    "provider_adapter": "GROK_KIE_GRID_FIRST_PLACEHOLDER_SECOND",
+    "provider_image_roles_in_order": [
+      "SEGMENT_ACTION_GRID",
+      "DETERMINISTIC_START_PLACEHOLDER"
+    ],
+    "duration_formula": "CEIL_SEGMENT_TARGET_SPAN",
+    "audio_authority_unchanged": true,
+    "baseline_calls_per_resource": 1,
+    "consolidated_corrections_per_resource": 1,
+    "automatic_retry": false,
+    "human_approval_before_external_call": true
+  },
+  "allowed_changes": [
+    "CANONICAL_P7_VIDEO_PROMPT_COMPILER",
+    "P7_VIDEO_PROMPT_REVERSE_AUDIT",
+    "ANTI_COLLAGE_LAYOUT_PRIORITY_CLAUSE",
+    "PERSISTENT_LAYOUT_FORENSICS_BEFORE_VIDEO_QC",
+    "P8_TO_P9_UNIFIED_EVIDENCE_GATE",
+    "ENTRY_REVALIDATION_OF_UPSTREAM_LINEAGE",
+    "NEGATIVE_REGRESSION_TESTS"
+  ],
+  "forbidden_changes": [
+    "MORE_IMAGEGEN_CALLS",
+    "MORE_PROVIDER_ASSET_UPLOADS",
+    "MORE_PROVIDER_VIDEO_TASKS",
+    "AUTOMATIC_SCENE_SPLITTING",
+    "SINGLE_FRAME_ONLY_ADAPTER",
+    "GRID_OR_START_IMAGE_ROLE_REORDER",
+    "AUDIO_SCENE_RETIMING",
+    "SOURCE_AUDIO_SPEED_CHANGE",
+    "BUDGET_RESET_BY_MIGRATION"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": "R6.2-IMAGEGEN-CAPABILITY-1.0",
+  "capability_id": "REPLACE_WITH_CAPABILITY_ID",
+  "profile_id": "CODEX_BUILT_IN_IMAGEGEN_PROMPT_ONLY",
+  "tool": "BUILT_IN_IMAGEGEN",
+  "interface_mode": "PROMPT_ONLY",
+  "size_parameter_exposed": false,
+  "aspect_ratio_parameter_exposed": false,
+  "exact_geometry_guarantee": false,
+  "verified_exact_canvas_aspect_ratios": [],
+  "observed_default_canvas_aspect_ratios": [
+    "2:3"
+  ],
+  "evidence_source": "BUILT_IN_TOOL_SCHEMA_AND_OBSERVED_OUTPUT",
+  "evidence_detail": "REPLACE_WITH_NON_SECRET_EVIDENCE_DETAIL",
+  "verified_at": "REPLACE_WITH_UTC_TIMESTAMP",
+  "status": "VERIFIED"
+}

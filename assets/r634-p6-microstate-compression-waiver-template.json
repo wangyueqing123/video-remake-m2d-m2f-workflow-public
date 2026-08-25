@@ -1,0 +1,26 @@
+{
+  "schema_version": "R6.20-P6-HUMAN-QC-WAIVER-1.0",
+  "project_id": "REPLACE_WITH_PROJECT_ID",
+  "grid_id": "G02",
+  "segment_id": "V02",
+  "rejected_qc_relative_path": "artifacts/P6/G02_GRID_CORRECTION_QC.json",
+  "rejected_qc_sha256": "REPLACE_WITH_64_HEX_SHA256",
+  "accepted_failure_codes": [
+    "REPLACE_WITH_*_PREMATURE_FULL_EXPOSURE_CELL_<NONFINAL_CELL>"
+  ],
+  "decision": "ACCEPT_AS_NON_BLOCKING",
+  "scope": "CURRENT_GRID_ONLY",
+  "microstate_evidence": {
+    "accepted_cell_numbers": [2],
+    "visible_deviation": "REPLACE_WITH_EXACT_VISIBLE_INTERMEDIATE_STATE_COMPRESSION",
+    "full_action_contract_unchanged": true,
+    "occlusion_action_visible": true,
+    "reveal_action_visible": true,
+    "required_hold_or_abstention_visible": true,
+    "terminal_outcome_after_condition": true,
+    "terminal_state_correct": true,
+    "identity_topology_and_counts_unchanged": true
+  },
+  "human_authority_text": "REPLACE_WITH_EXACT_HUMAN_DECISION",
+  "automatic_retry_allowed": false
+}

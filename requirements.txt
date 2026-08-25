@@ -1,0 +1,6 @@
+av
+faster-whisper
+numpy
+Pillow
+pytesseract
+

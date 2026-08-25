@@ -1,0 +1,43 @@
+{
+  "schema_version": "R6.2-P8-ASSET-UPLOAD-PACKAGE-1.0",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "phase": "P8",
+  "status": "WAIT_REVIEW",
+  "call_kind": "ASSET_UPLOAD",
+  "call_ordinal": 1,
+  "batch_id": "UPLOAD-V01-R1",
+  "segment_id": "V01",
+  "grid_id": "G01",
+  "provider": "KIE.AI",
+  "provider_adapter_profile": "GROK_KIE_GRID_FIRST_PLACEHOLDER_SECOND",
+  "endpoint": "https://kieai.redpandaai.co/api/file-stream-upload",
+  "purpose": "Upload exact reviewed segment assets only; create no video task.",
+  "segment_package": {
+    "relative_path": "artifacts/P7/V01_SEGMENT_PACKAGE.json",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256"
+  },
+  "assets": [
+    {
+      "asset_id": "V01_GRID",
+      "relative_path": "artifacts/P6/G01_GRID_BASELINE.png",
+      "sha256": "REPLACE_WITH_64_HEX_SHA256",
+      "role": "SEGMENT_ACTION_GRID",
+      "upload_path": "video-remake/r62/project/segment-v01",
+      "remote_file_name": "V01_GRID.png"
+    },
+    {
+      "asset_id": "V01_START",
+      "relative_path": "artifacts/P7/V01_START_CELL01.png",
+      "sha256": "REPLACE_WITH_64_HEX_SHA256",
+      "role": "SEGMENT_START_PLACEHOLDER",
+      "upload_path": "video-remake/r62/project/segment-v01",
+      "remote_file_name": "V01_START.png"
+    }
+  ],
+  "estimated_cost_usd": 0.0,
+  "video_task_creation_count": 0,
+  "forbidden_create_task": true,
+  "automatic_retry_allowed": false,
+  "human_approval_required": true,
+  "one_approval_one_submission": true
+}

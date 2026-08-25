@@ -1,0 +1,32 @@
+{
+  "schema_version": "R6.23-P8-VIDEO-QC-GATE-1.0",
+  "status": "PASSED",
+  "decision": "PASSED_P9_ELIGIBLE",
+  "created_at": "REPLACE_WITH_UTC_TIMESTAMP",
+  "project_id": "REPLACE_WITH_PROJECT_ID",
+  "segment_id": "V01",
+  "task_id": "REPLACE_WITH_EXACT_PROVIDER_TASK_ID",
+  "external_calls": 0,
+  "proofs": {
+    "video_qc": {
+      "relative_path": "artifacts/P8/V01_VIDEO_QC.json",
+      "sha256": "REPLACE_WITH_64_HEX"
+    },
+    "layout_forensics": {
+      "relative_path": "artifacts/P8/V01_LAYOUT_FORENSICS_R623.json",
+      "sha256": "REPLACE_WITH_64_HEX"
+    },
+    "video_prompt_audit": {
+      "relative_path": "artifacts/P7/V01_VIDEO_PROMPT_AUDIT_R623.json",
+      "sha256": "REPLACE_WITH_64_HEX"
+    },
+    "provider_task_identity": {
+      "relative_path": "artifacts/P8/runtime/V01/PROVIDER_TASK_IDENTITY_PROOF.json",
+      "sha256": "REPLACE_WITH_64_HEX"
+    },
+    "generated_output": {
+      "relative_path": "outputs/V01.mp4",
+      "sha256": "REPLACE_WITH_64_HEX"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": "R6.24-P2-SOURCE-EVENT-EVIDENCE-1.0",
+  "status": "VERIFIED",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "source_video": {
+    "relative_path": "inputs/source.mp4",
+    "sha256": "REPLACE_WITH_64_HEX"
+  },
+  "frame_index": {
+    "relative_path": "artifacts/P2/source-evidence/FRAME_INDEX.json",
+    "sha256": "REPLACE_WITH_64_HEX"
+  },
+  "review": {
+    "reviewed_frame_count": 0,
+    "reviewer_basis": "FRAME_INDEX_PLUS_EVENT_BOUNDARIES",
+    "all_visible_state_changes_captured": true,
+    "claim_visual_relationship": "ALIGNED",
+    "claim_visual_contradictions": []
+  },
+  "events": [
+    {
+      "event_id": "EV01",
+      "event_time_s": 0.0,
+      "action_subject": "REPLACE_WITH_SUBJECT",
+      "action_object": "REPLACE_WITH_OBJECT",
+      "prior_state": "REPLACE_WITH_VISIBLE_PRIOR_STATE",
+      "result_state": "REPLACE_WITH_VISIBLE_RESULT_STATE",
+      "pre_frame": {
+        "time_s": 0.0,
+        "relative_path": "artifacts/P2/source-evidence/frames/REPLACE.jpg",
+        "sha256": "REPLACE_WITH_64_HEX"
+      },
+      "post_frame": {
+        "time_s": 0.0,
+        "relative_path": "artifacts/P2/source-evidence/frames/REPLACE.jpg",
+        "sha256": "REPLACE_WITH_64_HEX"
+      }
+    }
+  ]
+}

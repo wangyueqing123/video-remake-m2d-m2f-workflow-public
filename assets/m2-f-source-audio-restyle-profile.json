@@ -1,0 +1,62 @@
+{
+  "schema_version": "R6.20-M2F-SOURCE-AUDIO-SCENE-RESTYLE-PROFILE-2.0",
+  "profile_id": "M2_F_SOURCE_AUDIO_SCENE_RESTYLE_V2",
+  "route_id": "M2_F_SOURCE_AUDIO_RESTYLE",
+  "execution_profile": "SOURCE_AUDIO_SCENE_RESTYLE",
+  "objective_profile": "NONE",
+  "default_style_profile": "DOG_HIGH_SHARE_MONO_COMIC",
+  "allowed_style_profiles": [
+    "DOG_HIGH_SHARE_MONO_COMIC",
+    "DOG_STYLE_C_GHIBLI_PET_NARRATIVE",
+    "DOG_STYLE_D_INDOOR_CARE_KEYFRAME",
+    "DOG_STYLE_E_REACTION_RESONANCE",
+    "CUSTOM_NAMED_STYLE"
+  ],
+  "creative_profile_id": "DOG_SOURCE_AUDIO_RESTYLE_V1",
+  "visual_production_core_id": "DOG_DF_VISUAL_CORE_V3",
+  "imagegen_capability_contract": {
+    "tool": "BUILT_IN_IMAGEGEN",
+    "profile_id": "CODEX_BUILT_IN_IMAGEGEN_PROMPT_ONLY",
+    "geometry_enforcement": "FLEXIBLE_REFERENCE",
+    "prompt_only_control_allowed": true,
+    "exact_pixels_claimed": false,
+    "canvas_and_cell_aspect_are_composition_guidance": true,
+    "downstream_start_cell_crop_is_deterministic": true,
+    "post_generation_geometry_verification_required": true
+  },
+  "audio": {
+    "variant": "SOURCE_AUDIO_REUSE",
+    "timing_authority": "SOURCE_AUDIO_MASTER",
+    "asset_usage": "FULL_TRACK_UNCHANGED",
+    "playback_speed": 1.0,
+    "trim_allowed": false,
+    "tts_allowed": false,
+    "generated_video_audio_policy": "MUTE"
+  },
+  "copy": {
+    "policy": "VERBATIM_NO_REWRITE",
+    "reorder_allowed": false,
+    "summarize_allowed": false,
+    "expand_allowed": false,
+    "caption_source": "LOCKED_SOURCE_COPY"
+  },
+  "visual": {
+    "derivation_authority": "SOURCE_AUDIO_COPY_PLUS_SOURCE_VIDEO_MACRO_SCENES",
+    "source_video_semantic_authority": "MACRO_SCENE_ACTION_CAUSAL_ONLY",
+    "source_video_pixel_authority": "NONE",
+    "source_video_camera_cut_authority": "NONE",
+    "source_video_keyframes_as_imagegen_input": false,
+    "scene_structure": "SOURCE_MACRO_SCENES_ALIGNED_TO_SOURCE_AUDIO_COPY",
+    "grid_strategy": "ONE_SCENE_ONE_GRID",
+    "continuity": "PROJECT_VISUAL_ANCHOR_PLUS_PREVIOUS_END_STATE",
+    "planning_parity_with": "M2_D_SHARE_FIRST",
+    "spatial_feasibility_contract": "R6.19_VISUAL_STATE_MACHINE_CORE"
+  },
+  "assembly": {
+    "audio_track": "ORIGINAL_SOURCE_AUDIO_ONLY",
+    "audio_speed": 1.0,
+    "video_model_audio": "MUTED",
+    "captions": "VERBATIM_SOURCE_COPY_ALIGNED_TO_SOURCE_AUDIO",
+    "video_adapts_to_audio": true
+  }
+}

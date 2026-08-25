@@ -1,0 +1,25 @@
+{
+  "schema_version": "R6.20-P6-HUMAN-QC-WAIVER-1.0",
+  "project_id": "REPLACE_WITH_PROJECT_ID",
+  "grid_id": "G01",
+  "segment_id": "V01",
+  "rejected_qc_relative_path": "artifacts/P6/G01_P6_QC.json",
+  "rejected_qc_sha256": "REPLACE_WITH_64_HEX_SHA256",
+  "accepted_failure_codes": ["LOW_VALUE_TREATS_COUNT_2_INSTEAD_OF_3"],
+  "decision": "ACCEPT_AS_NON_BLOCKING",
+  "scope": "DOWNSTREAM_FACT_PROPAGATION",
+  "propagation_policy": "PROPAGATE_OBSERVED_FACT_DOWNSTREAM",
+  "accepted_deviations": [
+    {
+      "failure_code": "LOW_VALUE_TREATS_COUNT_2_INSTEAD_OF_3",
+      "category": "COUNT",
+      "entity_id": "LOW_VALUE_TREATS",
+      "property": "count",
+      "expected_value": 3,
+      "observed_value": 2,
+      "propagation_policy": "SOURCE_GRID_AND_DOWNSTREAM"
+    }
+  ],
+  "human_authority_text": "REPLACE_WITH_EXACT_HUMAN_DECISION",
+  "automatic_retry_allowed": false
+}

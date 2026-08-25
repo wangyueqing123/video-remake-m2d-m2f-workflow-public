@@ -1,0 +1,18 @@
+{
+  "schema_version": "R6.23-P7-VIDEO-PROMPT-AUDIT-1.0",
+  "status": "REPLACE_WITH_PASSED_OR_FAILED",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "segment_id": "V01",
+  "grid_id": "G01",
+  "compiler": "compile_r623_video_prompt.py",
+  "prompt": {
+    "relative_path": "artifacts/P7/V01_VIDEO_PROMPT_R623.txt",
+    "sha256": "REPLACE_WITH_64_HEX",
+    "character_count": 0,
+    "internal_character_budget": 4000,
+    "budget_is_provider_claim": false
+  },
+  "lineage": {},
+  "proofs": {},
+  "issues": []
+}

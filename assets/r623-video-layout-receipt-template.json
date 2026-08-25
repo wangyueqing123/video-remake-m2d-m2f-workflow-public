@@ -1,0 +1,14 @@
+{
+  "schema_version": "R6.23-P8-VIDEO-LAYOUT-FORENSICS-1.0",
+  "status": "REPLACE_WITH_PASSED_OR_REJECTED",
+  "segment_id": "V01",
+  "video": {
+    "relative_path": "outputs/V01.mp4",
+    "sha256": "REPLACE_WITH_64_HEX"
+  },
+  "sample_count": 0,
+  "persistent_split_screen_detected": false,
+  "machine_evidence": {},
+  "manual_layout_review_required": true,
+  "decision": "REPLACE_WITH_PASSED_OR_HARD_FAIL"
+}

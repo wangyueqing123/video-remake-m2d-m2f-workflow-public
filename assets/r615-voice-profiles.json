@@ -1,0 +1,39 @@
+{
+  "schema_version": "R6.36-VOICE-PROFILES-2.0",
+  "profiles": [
+    {
+      "profile_id": "JIANYING_REAL_PODCAST_FEMALE_1P3",
+      "provider": "JianYing",
+      "voice_id": "真人播客女",
+      "global_speed": 1.3,
+      "status": "LANGUAGE_AWARE_ESTIMATE_WITH_FINAL_MEASUREMENT_REQUIRED",
+      "formula": {
+        "spoken_character_seconds": 0.12,
+        "punctuation_run_seconds": 0.46,
+        "speed_already_embedded": true,
+        "round_digits": 2
+      },
+      "language_models": {
+        "zh": {
+          "language_aliases": ["zh", "zh-CN", "zh-TW"],
+          "unit_mode": "CJK_CHARACTER",
+          "spoken_unit_seconds": 0.12,
+          "punctuation_run_seconds": 0.46,
+          "speed_already_embedded": true,
+          "round_digits": 2,
+          "formula_status": "LEGACY_CALIBRATED_USER_CONFIRMED"
+        },
+        "en": {
+          "language_aliases": ["en", "en-US", "en-GB"],
+          "unit_mode": "WHITESPACE_WORD",
+          "spoken_unit_seconds": 0.2564,
+          "punctuation_run_seconds": 0.22,
+          "speed_already_embedded": true,
+          "round_digits": 2,
+          "formula_status": "PROVISIONAL_180_WPM_AT_1X_SCALED_TO_1P3"
+        }
+      },
+      "production_policy": "CALIBRATED_ESTIMATE_BEFORE_VIDEO_FINAL_AUDIO_MEASUREMENT_BEFORE_EXPORT"
+    }
+  ]
+}

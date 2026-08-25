@@ -1,0 +1,74 @@
+{
+  "schema_version": "R6.2-P7-SEGMENT-PACKAGE-1.0",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "phase": "P7",
+  "status": "WAIT_REVIEW_BEFORE_P8",
+  "segment_id": "V01",
+  "scene_ids": ["S01"],
+  "grid_id": "G01",
+  "grid_role": "SEGMENT_ACTION_AUTHORITY",
+  "target_start_s": 0.0,
+  "target_end_s": 4.0,
+  "duration_authority": "COMPLETE_ACTION_AND_SPEECH_SPAN",
+  "fixed_time_slice": false,
+  "grid_asset": {
+    "relative_path": "artifacts/P6/G01_GRID_BASELINE.png",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256"
+  },
+  "start_frame_derivative": {
+    "relative_path": "artifacts/P7/V01_START_CELL01.png",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "source_grid_relative_path": "artifacts/P6/G01_GRID_BASELINE.png",
+    "source_grid_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "source_cell": 1,
+    "method": "DETERMINISTIC_CROP_NO_GENERATION",
+    "crop_receipt_relative_path": "artifacts/P7/V01_START_CELL01_CROP_RECEIPT.json",
+    "crop_receipt_sha256": "REPLACE_WITH_64_HEX_SHA256"
+  },
+  "video_prompt": {
+    "relative_path": "artifacts/P7/V01_VIDEO_PROMPT.txt",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "audio_variant": "POST_DUB_NARRATION"
+  },
+  "action_contract": {
+    "initial_state": "REPLACE_WITH_INITIAL_VISIBLE_STATE",
+    "large_action_path": "REPLACE_WITH_COMPLETE_ACTION_PATH",
+    "unique_interaction_channel": "REPLACE_WITH_ONLY_VALID_ENTRANCE_OR_CONTACT_PATH",
+    "decisive_action": "REPLACE_WITH_DECISIVE_ACTION",
+    "visible_result": "REPLACE_WITH_VISIBLE_RESULT",
+    "camera": "REPLACE_WITH_CAMERA_AND_FRAMING",
+    "continuity_in": "VIDEO_START",
+    "continuity_out": "REPLACE_WITH_CONTINUITY_OUT",
+    "forbidden_alternatives": ["REPLACE_WITH_FORBIDDEN_ALTERNATIVE"]
+  },
+  "audio_contract": {
+    "variant": "POST_DUB_NARRATION",
+    "spoken_copy": "REPLACE_WITH_COMPLETE_SPOKEN_SENTENCE",
+    "target_start_s": 0.0,
+    "target_end_s": 4.0,
+    "planned_duration_s": 4.0,
+    "timing_authority": "NARRATION_MASTER",
+    "voice_provider": "JianYing",
+    "voice_id": "REPLACE_WITH_FINAL_VOICE_ID",
+    "voice_speed": 1.0,
+    "timing_manifest": {
+      "relative_path": "artifacts/P3/NARRATION_PLAN.json",
+      "sha256": "REPLACE_WITH_64_HEX_SHA256"
+    },
+    "speaker_mode": "POST_PRODUCTION_VOICEOVER",
+    "lip_sync_policy": "NOT_APPLICABLE",
+    "generated_audio_policy": "IGNORE_OR_REPLACE"
+  },
+  "lineage": {
+    "job_relative_path": "artifacts/P1/JOB.json",
+    "job_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "scene_plan_relative_path": "artifacts/P4/SCENE_PLAN.json",
+    "scene_plan_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "narration_timing_relative_path": "artifacts/P3/NARRATION_PLAN.json",
+    "narration_timing_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "p6_qc_relative_path": "artifacts/P6/G01_P6_QC.json",
+    "p6_qc_sha256": "REPLACE_WITH_64_HEX_SHA256"
+  },
+  "provider_adapter_profile": "GROK_KIE_GRID_FIRST_PLACEHOLDER_SECOND",
+  "p8_submission_authorized": false
+}

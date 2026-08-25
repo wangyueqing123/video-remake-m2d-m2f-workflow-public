@@ -1,0 +1,53 @@
+{
+  "schema_version": "R6.19-P6-QC-1.0",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "grid_id": "G01",
+  "segment_id": "V01",
+  "submission_id": "REPLACE_WITH_SUBMISSION_ID",
+  "seal_sha256": "REPLACE_WITH_64_HEX_SHA256",
+  "generated_output": {
+    "relative_path": "artifacts/P6/G01_GRID_BASELINE.png",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256"
+  },
+  "global_checks": {
+    "layout_correct": false,
+    "geometry_contract_satisfied": false,
+    "chronology_correct": false,
+    "segment_content_isolated": false,
+    "intra_grid_continuity": false,
+    "state_ledger_satisfied": false,
+    "interaction_phases_satisfied": false,
+    "state_transitions_satisfied": false,
+    "topology_valid": false,
+    "unwanted_text_absent": false,
+    "style_contract_satisfied": false
+  },
+  "cross_grid_checks": {
+    "project_anchor_identity_match": "REPLACE_WITH_PASSED_OR_NOT_APPLICABLE_ANCHOR_ORIGIN",
+    "project_anchor_style_match": "REPLACE_WITH_PASSED_OR_NOT_APPLICABLE_ANCHOR_ORIGIN",
+    "project_anchor_environment_match": "REPLACE_WITH_PASSED_OR_NOT_APPLICABLE_ANCHOR_ORIGIN",
+    "previous_segment_state_match": "REPLACE_WITH_PASSED_OR_NOT_APPLICABLE_VIDEO_START"
+  },
+  "anchor_evidence": {
+    "project_anchor_relative_path": "artifacts/P6/PROJECT_VISUAL_ANCHOR.png",
+    "project_anchor_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "previous_segment_end_state_relative_path": "artifacts/P6/G00_END_STATE.png",
+    "previous_segment_end_state_sha256": "REPLACE_WITH_64_HEX_SHA256"
+  },
+  "style_audit": {
+    "relative_path": "artifacts/P6/G01_STYLE_AUDIT.json",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256"
+  },
+  "reference_promotion": {
+    "eligible": false,
+    "support_topology_passed": false,
+    "critical_contacts_verifiable": false,
+    "end_state_safe_for_next_segment": false
+  },
+  "cells": [],
+  "blocking_failure_codes": [],
+  "failure_class": "MODEL_RENDERING",
+  "decision": "REJECTED",
+  "correction_eligible": true,
+  "automatic_retry_allowed": false
+}

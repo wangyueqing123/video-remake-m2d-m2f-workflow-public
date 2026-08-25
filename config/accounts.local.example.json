@@ -1,0 +1,7 @@
+{
+  "KIE_API_KEY": "REPLACE_LOCALLY_AND_NEVER_COMMIT",
+  "KIE_UPLOAD_ENDPOINT": "https://kieai.redpandaai.co/api/file-stream-upload",
+  "KIE_VIDEO_MODEL": "grok-imagine-video-1-5-preview",
+  "TEST_RESOLUTION": "480p"
+}
+

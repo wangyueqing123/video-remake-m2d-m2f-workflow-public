@@ -1,0 +1,323 @@
+{
+  "schema_version": "R6.2-SCENE-PLAN-1.0",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "route_id": "M2_D_SHARE_FIRST",
+  "creative_profile_binding": {
+    "profile_id": "DOG_HIGH_SHARE_HEAT_V1",
+    "profile_sha256": "REPLACE_WITH_CANONICAL_PROFILE_SHA256",
+    "binding_mode": "FIXED_PROFILE"
+  },
+  "visual_production_core": {
+    "core_id": "DOG_DF_VISUAL_CORE_V3",
+    "contract_relative_path": "assets/shared-visual-production-core.json",
+    "all_scenes_preflighted": true,
+    "downstream_feasibility_status": "PASSED"
+  },
+  "keyframe_snapshot_contract": {
+    "schema_version": "R6.39-KEYFRAME-SNAPSHOT-1.0",
+    "qc_policy": "ONLY_EXPLICIT_PROOFS_ARE_HARD"
+  },
+  "source_video_sha256": "REPLACE_WITH_64_HEX_SHA256",
+  "timeline_evidence_fingerprint": "REPLACE_WITH_64_HEX_CANONICAL_FINGERPRINT",
+  "p3_blueprint_sha256": "REPLACE_WITH_64_HEX_SHA256",
+  "timing_authority": "NARRATION_MASTER",
+  "narration_timing": {
+    "relative_path": "artifacts/P3/NARRATION_PLAN.json",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256"
+  },
+  "target_duration_s": 4.0,
+  "timeline_analysis": {
+    "coverage_start_s": 0.0,
+    "coverage_end_s": 4.0,
+    "sampling_policy": "WHOLE_VIDEO_PER_SECOND_PLUS_REAL_CUTS",
+    "real_cut_times_s": [],
+    "critical_uncertainties": []
+  },
+  "scenes": [
+    {
+      "scene_id": "S01",
+      "target_start_s": 0.0,
+      "target_end_s": 4.0,
+      "source_evidence_intervals": [[0.0, 4.0]],
+      "setting": "REPLACE_WITH_SETTING",
+      "actors": ["REPLACE_WITH_ACTOR"],
+      "narrative_function": "HOOK",
+      "large_action": "REPLACE_WITH_COMPLETE_LARGE_ACTION",
+      "visible_result": "REPLACE_WITH_VISIBLE_RESULT",
+      "continuity_in": "VIDEO_START",
+      "continuity_out": "VIDEO_END",
+      "copy_or_audio": "REPLACE_WITH_COPY",
+      "authority": "APPROVED_CREATIVE_BLUEPRINT",
+      "forbidden_alternatives": ["REPLACE_WITH_PHYSICAL_OR_MEANING_ERROR"]
+      ,
+      "spatial_contract": {
+        "subject_supports": [
+          {
+            "entity_id": "DOG",
+            "surface_id": "FLOOR_OR_DOG_MAT",
+            "must_remain_on_surface": true,
+            "support_must_be_visible": false
+          }
+        ],
+        "prop_supports": [
+          {
+            "entity_id": "PROP1",
+            "surface_id": "REACHABLE_STABLE_SURFACE"
+          }
+        ],
+        "action_path": {
+          "description": "REPLACE_WITH_OPEN_GROUND_LEVEL_ACTION_PATH",
+          "open": true,
+          "requires_climbing": false,
+          "requires_penetration": false
+        },
+        "decisive_contact": {
+          "description": "REPLACE_WITH_VISIBLE_DECISIVE_CONTACT",
+          "reachable_without_climbing": true,
+          "reachable_without_penetration": true,
+          "must_be_visible": true
+        },
+        "camera_proofs": [
+          "整段动作通道与物理拓扑可核验",
+          "决定性接触只在CONTACT关键帧中直接可见"
+        ],
+        "feasibility_status": "PASSED"
+      }
+    }
+  ],
+  "video_segments": [
+    {
+      "segment_id": "V01",
+      "segment_order": 1,
+      "scene_ids": ["S01"],
+      "grid_id": "G01",
+      "target_start_s": 0.0,
+      "target_end_s": 4.0,
+      "duration_authority": "COMPLETE_ACTION_AND_SPEECH_SPAN",
+      "fixed_time_slice": false,
+      "planned_narration_duration_s": 4.0,
+      "narration_obligation_ids": ["U01:1"],
+      "action_nodes": [
+        {
+          "node_id": "N01",
+          "start_s": 0.0,
+          "end_s": 4.0,
+          "action": "REPLACE_WITH_ACTION_PATH",
+          "visible_state_at_end": "REPLACE_WITH_VISIBLE_STATE",
+          "fulfills_obligation_ids": ["U01:1"]
+        }
+      ],
+      "content_obligations": ["REPLACE_WITH_ONLY_THIS_SEGMENT_REQUIRED_MEANING"],
+      "continuity_in": "VIDEO_START",
+      "continuity_out": "VIDEO_END",
+      "entry_transition": {
+        "kind": "VIDEO_START",
+        "state_match_required": false,
+        "cut_id": ""
+      },
+      "exit_transition": {
+        "kind": "VIDEO_END",
+        "state_match_required": false,
+        "cut_id": ""
+      }
+    }
+  ],
+  "grids": [
+    {
+      "grid_id": "G01",
+      "grid_order": 1,
+      "segment_id": "V01",
+      "grid_role": "SEGMENT_ACTION_AUTHORITY",
+      "layout": "2x2",
+      "split_reason": "SCENE_SCOPED_SEGMENT:S01",
+      "start_cell": 1,
+      "end_cell": 4,
+      "target_canvas_aspect_ratio": "9:16",
+      "target_cell_aspect_ratio": "9:16",
+      "layout_decision": {
+        "selection_authority": "NECESSARY_VISUAL_BEATS",
+        "necessary_beat_count": 4,
+        "necessary_visual_beats": [
+          {"beat_id": "B01", "role": "START_STATE", "reason": "建立动作开始前的可见状态"},
+          {"beat_id": "B02", "role": "ACTION_PATH", "reason": "显示主体沿唯一合理路径开始动作"},
+          {"beat_id": "B03", "role": "DECISIVE_CONTACT", "reason": "显示决定结果的关键接触或状态变化"},
+          {"beat_id": "B04", "role": "VISIBLE_RESULT", "reason": "证明完整动作已经完成"}
+        ],
+        "complexity_flags": [],
+        "selected_layout": "2x2",
+        "time_slicing_used": false
+      },
+      "state_ledger": {
+        "tracked_entities": [
+          {
+            "entity_id": "PROP1",
+            "kind": "PROP",
+            "label": "同一个关键道具",
+            "count_unit": "OBJECT",
+            "visual_signature": "REPLACE_WITH_FIXED_VISIBLE_PROP_SIGNATURE",
+            "quantity_policy": "EXACT_ONE",
+            "continuity_scope": "PROJECT",
+            "allowed_states": ["START", "MOVING", "CONTACT", "RESULT"]
+          }
+        ],
+        "allowed_transitions": [
+          {"entity_id": "PROP1", "from": "START", "to": "MOVING"},
+          {"entity_id": "PROP1", "from": "MOVING", "to": "CONTACT"},
+          {"entity_id": "PROP1", "from": "CONTACT", "to": "RESULT"}
+        ],
+        "cell_states": [
+          {
+            "cell": 1,
+            "phase": "BEFORE_ACTION",
+            "states": [
+              {"entity_id": "PROP1", "state": "START", "visible": true, "count": 1, "location": "动作起点", "prompt_lock": "唯一关键道具清楚位于动作起点"}
+            ]
+          },
+          {
+            "cell": 2,
+            "phase": "ACTION_SETUP",
+            "states": [
+              {"entity_id": "PROP1", "state": "MOVING", "visible": true, "count": 1, "location": "唯一动作路径中", "prompt_lock": "唯一关键道具正沿合理路径移动"}
+            ]
+          },
+          {
+            "cell": 3,
+            "phase": "ACTION",
+            "states": [
+              {"entity_id": "PROP1", "state": "CONTACT", "visible": true, "count": 1, "location": "关键接触位置", "prompt_lock": "唯一关键道具刚完成决定结果的关键接触"}
+            ]
+          },
+          {
+            "cell": 4,
+            "phase": "AFTER_ACTION",
+            "states": [
+              {"entity_id": "PROP1", "state": "RESULT", "visible": true, "count": 1, "location": "结果位置", "prompt_lock": "唯一关键道具已经到达完整动作的结果位置"}
+            ]
+          }
+        ]
+      },
+      "cells": [
+        {
+          "cell": 1,
+          "scene_id": "S01",
+          "beat_role": "VIDEO_START",
+          "segment_boundary": "START",
+          "temporal_phase": "BEFORE_ACTION",
+          "target_time_s": 0.0,
+          "source_time_s": null,
+          "visual_statement": "REPLACE_WITH_VISIBLE_START_STATE",
+          "fulfills_obligation_ids": [],
+          "camera": "REPLACE_WITH_CAMERA",
+          "interaction_phase": "BEFORE_CONTACT",
+          "keyframe_contract": {
+            "snapshot_type": "STATE",
+            "contact_pair": [],
+            "support_proof_required": false
+          },
+          "state_transition_contract": {
+            "phase": "HOLD",
+            "changes": [],
+            "transition_visible": false
+          },
+          "spatial_proof": {
+            "subject_supports": [{"entity_id": "DOG", "surface_id": "FLOOR_OR_DOG_MAT"}],
+            "support_surfaces_visible": false,
+            "critical_contact_visible": false,
+            "topology_verifiable": true
+          },
+          "result_visible": false
+        },
+        {
+          "cell": 2,
+          "scene_id": "S01",
+          "beat_role": "SCENE_SETUP",
+          "segment_boundary": "NONE",
+          "temporal_phase": "ACTION_SETUP",
+          "target_time_s": 1.2,
+          "source_time_s": null,
+          "visual_statement": "REPLACE_WITH_ACTION_PATH_STATE",
+          "fulfills_obligation_ids": [],
+          "camera": "REPLACE_WITH_CAMERA",
+          "interaction_phase": "BEFORE_CONTACT",
+          "keyframe_contract": {
+            "snapshot_type": "STATE",
+            "contact_pair": [],
+            "support_proof_required": false
+          },
+          "state_transition_contract": {
+            "phase": "HOLD",
+            "changes": [],
+            "transition_visible": false
+          },
+          "spatial_proof": {
+            "subject_supports": [{"entity_id": "DOG", "surface_id": "FLOOR_OR_DOG_MAT"}],
+            "support_surfaces_visible": false,
+            "critical_contact_visible": false,
+            "topology_verifiable": true
+          },
+          "result_visible": false
+        },
+        {
+          "cell": 3,
+          "scene_id": "S01",
+          "beat_role": "DECISIVE_ACTION",
+          "segment_boundary": "NONE",
+          "temporal_phase": "ACTION",
+          "target_time_s": 2.6,
+          "source_time_s": null,
+          "visual_statement": "REPLACE_WITH_DECISIVE_CONTACT_STATE",
+          "fulfills_obligation_ids": [],
+          "camera": "REPLACE_WITH_CAMERA",
+          "interaction_phase": "CONTACT",
+          "keyframe_contract": {
+            "snapshot_type": "CONTACT",
+            "contact_pair": ["REPLACE_WITH_CONTACT_ENTITY_A", "REPLACE_WITH_CONTACT_ENTITY_B"],
+            "support_proof_required": false
+          },
+          "state_transition_contract": {
+            "phase": "HOLD",
+            "changes": [],
+            "transition_visible": true
+          },
+          "spatial_proof": {
+            "subject_supports": [{"entity_id": "DOG", "surface_id": "FLOOR_OR_DOG_MAT"}],
+            "support_surfaces_visible": false,
+            "critical_contact_visible": true,
+            "topology_verifiable": true
+          },
+          "result_visible": false
+        },
+        {
+          "cell": 4,
+          "scene_id": "S01",
+          "beat_role": "SCENE_RESULT",
+          "segment_boundary": "END",
+          "temporal_phase": "AFTER_ACTION",
+          "target_time_s": 4.0,
+          "source_time_s": null,
+          "visual_statement": "REPLACE_WITH_VISIBLE_RESULT_STATE",
+          "fulfills_obligation_ids": ["U01:1"],
+          "camera": "REPLACE_WITH_CAMERA",
+          "interaction_phase": "AFTER_CONTACT",
+          "keyframe_contract": {
+            "snapshot_type": "STATE",
+            "contact_pair": [],
+            "support_proof_required": false
+          },
+          "state_transition_contract": {
+            "phase": "HOLD",
+            "changes": [],
+            "transition_visible": false
+          },
+          "spatial_proof": {
+            "subject_supports": [{"entity_id": "DOG", "surface_id": "FLOOR_OR_DOG_MAT"}],
+            "support_surfaces_visible": false,
+            "critical_contact_visible": false,
+            "topology_verifiable": true
+          },
+          "result_visible": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema_version": "R6.2-ENVIRONMENT-1.0",
+  "core_runtime": {
+    "python_minimum": "3.10",
+    "python_dependencies": ["Pillow"],
+    "dependency_scope": {
+      "control_and_json_validation": "STANDARD_LIBRARY_ONLY",
+      "deterministic_png_crop_and_pixel_validation": "PILLOW_REQUIRED"
+    },
+    "network_required": false
+  },
+  "optional_capabilities": {
+    "video_audio_decode": {
+      "python_modules": ["av"],
+      "external_ffmpeg_executable_required": false
+    },
+    "transcription": {
+      "python_modules": ["faster_whisper", "numpy"],
+      "model_cache_bundled": false
+    },
+    "cover_ocr": {
+      "python_modules": ["PIL", "pytesseract"],
+      "executables": ["tesseract"],
+      "language_data": ["chi_sim", "eng"],
+      "language_data_bundled": false
+    },
+    "spreadsheet_read": {
+      "python_modules": ["openpyxl"]
+    },
+    "deterministic_png_crop_and_pixel_validation": {
+      "python_modules": ["PIL"],
+      "required": true,
+      "required_for_adapters": [
+        "GROK_KIE_GRID_FIRST_PLACEHOLDER_SECOND",
+        "GROK_WEB_GRID_PLUS_FIRST_FRAME"
+      ]
+    },
+    "image_generation": {
+      "capability": "RUNTIME_AND_PACKAGE_SPECIFIC",
+      "runtime_detection": "SEALED_CAPABILITY_ARTIFACT_REQUIRED",
+      "default_profiles_relative_path": "assets/imagegen-capability-registry.json",
+      "exact_geometry_requires_exposed_size_or_aspect_parameter": true,
+      "prompt_only_aspect_requests_are_not_capability_evidence": true
+    },
+    "provider_api": {
+      "network_required": true,
+      "credentials_bundled": false,
+      "human_review_required": true
+    }
+  },
+  "forbidden_bundle_content": [
+    "API keys",
+    "credentials",
+    "local user paths",
+    "Python virtual environments",
+    "model caches",
+    "temporary upload URLs"
+  ]
+}

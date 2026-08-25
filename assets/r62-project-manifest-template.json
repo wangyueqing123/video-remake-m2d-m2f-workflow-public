@@ -1,0 +1,52 @@
+{
+  "schema_version": "R6.2-PROJECT-STATE-1.0",
+  "skill_version": "R6.21",
+  "project_id": "REPLACE_WITH_PROJECT_ID",
+  "created_at": "REPLACE_WITH_UTC_TIMESTAMP",
+  "updated_at": "REPLACE_WITH_UTC_TIMESTAMP",
+  "path_policy": "PROJECT_RELATIVE_ONLY",
+  "skill": {
+    "entry_relative_path": "REPLACE_WITH_RELATIVE_PATH_TO_SKILL_MD",
+    "entry_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "version_relative_path": "REPLACE_WITH_RELATIVE_PATH_TO_VERSION",
+    "version_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "tree_sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "tree_file_count": 0
+  },
+  "current_phase": "P0",
+  "status": "WAIT_INPUT",
+  "active_session": null,
+  "mode_lock": null,
+  "source_binding": null,
+  "artifacts": {},
+  "review_seals": [],
+  "approvals": [],
+  "submissions": [],
+  "qc_records": [],
+  "pending_qc_submission_id": null,
+  "runtime_policy": {
+    "audio_pipeline": "POST_DUB_NARRATION",
+    "video_model_speech": "FORBIDDEN",
+    "generated_audio": "IGNORE_OR_REPLACE",
+    "audio_excluded_from_visual_score": true,
+    "visual_acceptance_threshold": 80,
+    "final_master_acceptance_threshold": 85
+  },
+  "events": [],
+  "generation_budget": {
+    "per_grid_baseline_calls": 1,
+    "per_grid_consolidated_corrections": 1,
+    "project_max_grid_baselines": 1,
+    "project_max_grid_corrections": 1,
+    "pilot_gate_after_first_grid": true,
+    "per_cell_calls": 0,
+    "auto_retry": false,
+    "one_approval_one_submission": true
+  },
+  "resume_contract": {
+    "first_safe_action": "INSPECT_PROJECT_AND_REVALIDATE_BOUND_ARTIFACTS",
+    "provider_call_authorized": false,
+    "chat_memory_is_authority": false,
+    "historical_approval_is_live_after_relocation": false
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "R6.6-PREVIOUS-END-STATE-CROP-1.0",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "source_grid_id": "G01",
+  "source_grid_order": 1,
+  "source_grid_relative_path": "artifacts/P6/G01_GRID_BASELINE.png",
+  "source_grid_sha256": "REPLACE_WITH_64_HEX_SHA256",
+  "source_qc_relative_path": "artifacts/P6/G01_GRID_BASELINE_QC.json",
+  "source_qc_sha256": "REPLACE_WITH_64_HEX_SHA256",
+  "source_cell": 4,
+  "layout": "2x2",
+  "method": "DETERMINISTIC_BOTTOM_RIGHT_CROP_NO_GENERATION",
+  "crop_box_px": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "output_relative_path": "artifacts/P6/G01_END_STATE.png",
+  "output_sha256": "REPLACE_WITH_64_HEX_SHA256"
+}

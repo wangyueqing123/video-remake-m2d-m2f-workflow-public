@@ -1,0 +1,29 @@
+{
+  "schema_version": "R6.14-NARRATION-TIMING-1.0",
+  "status": "MEASURED_FINAL_VOICE",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "audio_variant": "POST_DUB_NARRATION",
+  "timing_authority": "NARRATION_MASTER",
+  "voice": {
+    "provider": "JianYing",
+    "voice_id": "REPLACE_WITH_FINAL_VOICE_ID",
+    "global_speed": 1.0,
+    "measurement_method": "MEASURED_FINAL_EDITOR_TTS"
+  },
+  "measurement_evidence": {
+    "relative_path": "artifacts/P3/NARRATION_TIMING_EVIDENCE.png",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256"
+  },
+  "segments": [
+    {
+      "segment_id": "V01",
+      "segment_order": 1,
+      "spoken_copy": "REPLACE_WITH_COMPLETE_SPOKEN_SENTENCE",
+      "start_s": 0.0,
+      "end_s": 3.8,
+      "duration_s": 3.8,
+      "voice_speed": 1.0
+    }
+  ],
+  "total_duration_s": 3.8
+}

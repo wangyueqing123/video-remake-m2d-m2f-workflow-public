@@ -1,0 +1,56 @@
+{
+  "schema_version": "R6.4-P8-VIDEO-OUTPUT-QC-1.0",
+  "status": "REVIEWED",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "segment_id": "V01",
+  "task_id": "REPLACE_WITH_TASK_ID",
+  "generated_output": {
+    "relative_path": "outputs/V01.mp4",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256"
+  },
+  "visual_score_threshold": 80,
+  "visual_score_breakdown": [
+    {
+      "criterion": "IDENTITY_AND_ENVIRONMENT_CONTINUITY",
+      "maximum": 20,
+      "score": 0,
+      "evidence": "REPLACE_WITH_VISUAL_EVIDENCE"
+    },
+    {
+      "criterion": "CORE_ACTION_AND_NARRATIVE_RESULT",
+      "maximum": 25,
+      "score": 0,
+      "evidence": "REPLACE_WITH_VISUAL_EVIDENCE"
+    },
+    {
+      "criterion": "PHYSICAL_TOPOLOGY_AND_SAFETY",
+      "maximum": 20,
+      "score": 0,
+      "evidence": "REPLACE_WITH_VISUAL_EVIDENCE"
+    },
+    {
+      "criterion": "COMPOSITION_STYLE_AND_USABILITY",
+      "maximum": 15,
+      "score": 0,
+      "evidence": "REPLACE_WITH_VISUAL_EVIDENCE"
+    },
+    {
+      "criterion": "REFERENCE_START_AND_SEQUENCE_ADHERENCE",
+      "maximum": 20,
+      "score": 0,
+      "evidence": "REPLACE_WITH_VISUAL_EVIDENCE"
+    }
+  ],
+  "visual_score": 0,
+  "hard_visual_failures": [],
+  "audio_policy": {
+    "pipeline": "POST_DUB_NARRATION",
+    "excluded_from_visual_score": true,
+    "post_dub_required": true,
+    "generated_audio_action": "IGNORE_OR_REPLACE",
+    "protagonist_lip_sync_required": false
+  },
+  "decision": "REJECTED",
+  "automatic_retry_allowed": false,
+  "next_action": "REPLACE_WITH_NEXT_ACTION"
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": "R6.19-SOURCE-AUDIO-TIMING-1.0",
+  "status": "MEASURED_SOURCE_AUDIO",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "audio_variant": "SOURCE_AUDIO_REUSE",
+  "timing_authority": "SOURCE_AUDIO_MASTER",
+  "source_audio": {
+    "relative_path": "inputs/source.mp3",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "duration_s": 0.0,
+    "measured_media_duration_s": 0.0,
+    "editor_timeline_quantization_s": 0.001,
+    "playback_speed": 1.0,
+    "measurement_method": "MEDIA_PROBE_PYAV_EDITOR_SAFE_FLOOR_MS"
+  },
+  "source_copy": {
+    "relative_path": "inputs/source-copy.txt",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "policy": "VERBATIM_NO_REWRITE"
+  },
+  "segments": [
+    {
+      "segment_id": "V01",
+      "segment_order": 1,
+      "exact_copy": "REPLACE_WITH_VERBATIM_COPY_SPAN",
+      "start_s": 0.0,
+      "end_s": 1.0,
+      "duration_s": 1.0,
+      "audio_speed": 1.0
+    }
+  ],
+  "total_duration_s": 1.0
+}

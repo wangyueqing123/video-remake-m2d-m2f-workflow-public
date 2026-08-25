@@ -1,0 +1,42 @@
+{
+  "schema_version": "R6.14-P9-FINAL-MASTER-QC-1.0",
+  "status": "REVIEWED",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "output": {
+    "relative_path": "outputs/REPLACE_WITH_FINAL_MASTER.mp4",
+    "sha256": "REPLACE_WITH_SHA256",
+    "bytes": 0
+  },
+  "segment_visual_qc": [],
+  "aggregate_visual_score_mean": 0,
+  "post_dub": {
+    "status": "PASSED_TEST_OR_PRODUCTION_VOICE",
+    "model_audio_preserved": false,
+    "timing_manifest_relative_path": "artifacts/P3/NARRATION_TIMING.json",
+    "timing_manifest_sha256": "REPLACE_WITH_SHA256",
+    "editing_alignment_relative_path": "artifacts/P9/EDITING_ALIGNMENT.json",
+    "editing_alignment_sha256": "REPLACE_WITH_SHA256"
+  },
+  "technical_evidence": {
+    "assembly_receipt_relative_path": "artifacts/P8/POSTDUB_ASSEMBLY_RECEIPT.json",
+    "probe_relative_path": "artifacts/P8/FINAL_MASTER_TECHNICAL_PROBE.json",
+    "contact_sheet_relative_path": "artifacts/P8/FINAL_MASTER_CONTACT_SHEET.jpg"
+  },
+  "checks": {
+    "all_segments_present_in_order": true,
+    "hard_visual_failures_absent": true,
+    "model_audio_replaced": true,
+    "post_dub_audio_present": true,
+    "audio_video_duration_aligned": true,
+    "uniform_narration_voice_speed": true,
+    "video_follows_narration_timeline": true,
+    "black_frames_introduced_by_assembly": false,
+    "grid_or_split_screen_absent": true,
+    "unwanted_text_absent": true
+  },
+  "hard_failures": [],
+  "decision": "PASSED",
+  "test_run_complete": true,
+  "additional_external_call_required": false,
+  "automatic_retry_allowed": false
+}

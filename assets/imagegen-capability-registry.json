@@ -1,0 +1,31 @@
+{
+  "schema_version": "R6.41.2-IMAGEGEN-CAPABILITY-1.0",
+  "profiles": {
+    "CODEX_BUILT_IN_IMAGEGEN_PROMPT_ONLY": {
+      "tool": "BUILT_IN_IMAGEGEN",
+      "interface_mode": "PROMPT_ONLY",
+      "size_parameter_exposed": false,
+      "aspect_ratio_parameter_exposed": false,
+      "verified_exact_canvas_aspect_ratios": [],
+      "observed_default_canvas_aspect_ratios": ["2:3"],
+      "exact_geometry_guarantee": false,
+      "geometry_enforcement": "FLEXIBLE_REFERENCE",
+      "prompt_only_control_allowed": true,
+      "requested_aspect_ratio": "9:16",
+      "post_generation_geometry_verification_required": true,
+      "deterministic_crop_allowed": true,
+      "exact_geometry_unavailable_is_blocking": false
+    },
+    "PROJECT_VERIFIED_EXACT_GEOMETRY": {
+      "tool": "PROJECT_DECLARED_PROVIDER",
+      "interface_mode": "EXPLICIT_SIZE_OR_ASPECT_PARAMETER",
+      "size_parameter_exposed": true,
+      "aspect_ratio_parameter_exposed": true,
+      "verified_exact_canvas_aspect_ratios": [],
+      "exact_geometry_guarantee": true,
+      "geometry_enforcement": "EXACT_PIXELS",
+      "project_evidence_required": true
+    }
+  }
+}
+

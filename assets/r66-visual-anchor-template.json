@@ -1,0 +1,26 @@
+{
+  "schema_version": "R6.6-PROJECT-VISUAL-ANCHOR-1.0",
+  "job_id": "REPLACE_WITH_JOB_ID",
+  "status": "VALIDATED",
+  "anchor_id": "PROJECT_VISUAL_ANCHOR",
+  "source_type": "FIRST_PASSED_GRID",
+  "source_grid_id": "G01",
+  "source_grid_order": 1,
+  "anchor_asset": {
+    "relative_path": "artifacts/P6/G01_GRID_BASELINE.png",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256"
+  },
+  "source_qc": {
+    "relative_path": "artifacts/P6/G01_GRID_BASELINE_QC.json",
+    "sha256": "REPLACE_WITH_64_HEX_SHA256",
+    "decision": "PASSED"
+  },
+  "locks": {
+    "person_identity": true,
+    "animal_identity": true,
+    "visual_style": true,
+    "core_environment": true,
+    "action_structure": false
+  },
+  "portable": true
+}
