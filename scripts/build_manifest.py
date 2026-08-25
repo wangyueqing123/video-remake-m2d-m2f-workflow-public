@@ -24,7 +24,7 @@ def main() -> int:
         })
     payload = {
         "schema_version": "M2D-M2F-MANIFEST-1.0",
-        "release_id": "R6.41.2-DF1-PUBLIC",
+        "release_id": "R6.41.2-DF1-PUBLIC.1",
         "file_count": len(files),
         "files": files,
     }

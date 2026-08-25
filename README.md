@@ -1,6 +1,6 @@
 # M2-D / M2-F 视频二创工作流
 
-这是一个只发布两条生产路线的私有仓库：
+这是一个只发布两条生产路线的公共仓库：
 
 - `M2_D_SHARE_FIRST`：保留源事实和语义，改写成更适合转发的后期旁白，并重新生成画面。
 - `M2_F_SOURCE_AUDIO_RESTYLE`：完整保留原 MP3、逐字文案、语言和时间轴，只重新设计画面。
@@ -9,7 +9,7 @@
 
 ## 当前版本
 
-- 发布版本：`R6.41.2-DF1-PUBLIC`
+- 发布版本：`R6.41.2-DF1-PUBLIC.1`
 - 上游生产核心：`R6.41`
 - 上游修订：`R6.41.2`
 - 默认画风：`DOG_HIGH_SHARE_MONO_COMIC`
@@ -22,7 +22,7 @@
 ```powershell
 git clone https://github.com/wangyueqing123/video-remake-m2d-m2f-workflow-public.git
 Set-Location video-remake-m2d-m2f-workflow-public
-git checkout R6.41.2-DF1-PUBLIC
+git checkout R6.41.2-DF1-PUBLIC.1
 python -X utf8 -B scripts\validate_distribution.py
 ```
 
@@ -30,19 +30,49 @@ python -X utf8 -B scripts\validate_distribution.py
 
 ## 环境
 
-建议使用 Python 3.11–3.13。安装本地媒体依赖：
+Windows 基础软件：
+
+- Git；
+- Python 3.11–3.13；
+- Tesseract OCR 5.x，以及 `chi_sim`、`eng` 语言包；
+- Codex（需要内置 ImageGen）；
+- 剪映专业版；
+- KIE/Grok API 账号；
+- `jianying-ai-foundation`，仅在生成剪映草稿时作为只读依赖。
+
+先确认基础命令可以使用：
 
 ```powershell
-python -m pip install -r requirements.txt
+git --version
+python --version
+tesseract --version
 ```
 
-另外需要：
+在仓库根目录创建独立 Python 环境并安装媒体依赖：
 
-- Tesseract OCR 5.x，中文与英文语言包；
-- Codex 内置 ImageGen；
-- KIE/Grok API 账号，测试阶段使用480p；
-- 剪映专业版；
-- 直接生成剪映草稿时，以只读方式使用 `jianying-ai-foundation`。
+```powershell
+python -m venv .venv
+Set-ExecutionPolicy -Scope Process Bypass
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+python -X utf8 -B scripts\check_r62_environment.py
+python -X utf8 -B scripts\validate_distribution.py
+```
+
+如果系统不能直接找到 Tesseract，可在执行 OCR 时通过 `--tessdata-dir` 指向包含语言包的目录。运行下面命令应能看到 `chi_sim` 与 `eng`：
+
+```powershell
+tesseract --list-langs
+```
+
+创建 KIE 视频任务前，只在当前 PowerShell 进程设置密钥：
+
+```powershell
+$env:KIE_API_KEY = "<本机KIE密钥>"
+```
+
+测试阶段默认使用480p。任何 ImageGen、资产上传或视频任务都必须先完成人工审批封印；每个任务只能提交一次，不自动重试。
 
 默认不会调用外部 TTS API。任何密钥只放在本机环境变量或仓库外的私密文件中，不能提交到 Git。
 

@@ -1,6 +1,6 @@
 {
   "schema_version": "M2D-M2F-MANIFEST-1.0",
-  "release_id": "R6.41.2-DF1-PUBLIC",
+  "release_id": "R6.41.2-DF1-PUBLIC.1",
   "file_count": 161,
   "files": [
     {
@@ -10,13 +10,13 @@
     },
     {
       "path": "README.md",
-      "size": 5229,
-      "sha256": "6075f97cc15d990e304b2c1c8cc928b55c4bb3dbb655c648543cf87a2ae4b358"
+      "size": 6130,
+      "sha256": "66549d05503c1f9cd3f9085b728f71bb5ef857ea825c00cc788a5147fa62a27c"
     },
     {
       "path": "RELEASE.json",
-      "size": 1121,
-      "sha256": "3decdbe67f1ed7c043d744be0e4e559687abe5e2fbd1664075b61208540ae14a"
+      "size": 1123,
+      "sha256": "b7e917a28fc5cf94519d02f3b48f80805391e21072cab652b4e424ea129d03a8"
     },
     {
       "path": "SKILL.md",
@@ -25,8 +25,8 @@
     },
     {
       "path": "VERSION",
-      "size": 19,
-      "sha256": "a5f980056dd88b51dd8eb5c44f1acde47c8987193e3962233abb1d4a97a35c83"
+      "size": 21,
+      "sha256": "fbd38eb3d654d68ddc959cc39ccef63e09606817b1ff4bb37558958bfdf7aecf"
     },
     {
       "path": "agents/openai.yaml",
@@ -470,8 +470,8 @@
     },
     {
       "path": "scripts/build_manifest.py",
-      "size": 1169,
-      "sha256": "54a37602ac45f2e302a27a139b52c73ac71d57ee862abc65843499be00bd2911"
+      "size": 1171,
+      "sha256": "da359282c98cc9c1f7c808db4978f436c59b430cc2c3101a38eef3aa88187a5a"
     },
     {
       "path": "scripts/build_r619_source_audio_p9.py",

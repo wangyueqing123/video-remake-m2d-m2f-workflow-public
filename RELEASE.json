@@ -1,6 +1,6 @@
 {
   "schema_version": "M2D-M2F-DISTRIBUTION-1.0",
-  "release_id": "R6.41.2-DF1-PUBLIC",
+  "release_id": "R6.41.2-DF1-PUBLIC.1",
   "upstream_release": "R6.41",
   "upstream_repository_patch": "R6.41.2",
   "upstream_commit": "9ac1d03423f997b8dce43d9987feec6c99bae2e0",
